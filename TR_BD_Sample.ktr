@@ -1,0 +1,2261 @@
+<transformation>
+  <info>
+    <name>TR_ALL_BD</name>
+    <description>TR_ALL_BD</description>
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/public/S1/O1</directory>
+    <parameters>
+      <parameter>
+        <name>fr_date</name>
+        <default_value />
+        <description>YYYY-MM-DD HH:MM:SS</description>
+      </parameter>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINE1_READ</id>
+          <enabled>Y</enabled>
+          <name>LINE1_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINE1_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINE1_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINE1_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINE1_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINE1_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINE1_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINE1_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINE1_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINE1_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINE1_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINE1_READ</id>
+          <enabled>Y</enabled>
+          <name>LINE1_READ</name>
+        </field>
+        <field>
+          <id>LINE1_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINE1_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINE1_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINE1_UPDATED</name>
+        </field>
+        <field>
+          <id>LINE1_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINE1_INPUT</name>
+        </field>
+        <field>
+          <id>LINE1_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINE1_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINE1_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINE1_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_O1JECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_O1JECT_TYPE</name>
+        </field>
+        <field>
+          <id>O1JECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>O1JECT_NAME</name>
+        </field>
+        <field>
+          <id>O1JECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>O1JECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>O1JECT_ID</id>
+          <enabled>Y</enabled>
+          <name>O1JECT_ID</name>
+        </field>
+        <field>
+          <id>O1JECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>O1JECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINE1_READ</id>
+          <enabled>Y</enabled>
+          <name>LINE1_READ</name>
+        </field>
+        <field>
+          <id>LINE1_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINE1_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINE1_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINE1_UPDATED</name>
+        </field>
+        <field>
+          <id>LINE1_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINE1_INPUT</name>
+        </field>
+        <field>
+          <id>LINE1_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINE1_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINE1_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINE1_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DE1CRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DE1CRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_O1jects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+      <partitionschema>
+        <name>cluster</name>
+        <dynamic>N</dynamic>
+        <partitions_per_slave />
+      </partitionschema>
+      <partitionschema>
+        <name>dynamic</name>
+        <dynamic>Y</dynamic>
+        <partitions_per_slave>1</partitions_per_slave>
+      </partitionschema>
+    </partitionschemas>
+    <slaveservers>
+      <slaveserver>
+        <name>DI Server</name>
+        <hostname>localhost</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>u2</username>
+        <password>Encrypted abcde</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local</name>
+        <hostname>127.0.0.1</hostname>
+        <port>9080</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abcde</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local carte</name>
+        <hostname>localhost</hostname>
+        <port>8080</port>
+        <webAppName>spoon</webAppName>
+        <username>admin</username>
+        <password>Encrypted </password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+    </slaveservers>
+    <clusterschemas>
+      <clusterschema>
+        <name>ClusterSchema</name>
+        <base_port>40000</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>Y</sockets_compressed>
+        <dynamic>N</dynamic>
+        <slaveservers>
+        </slaveservers>
+      </clusterschema>
+      <clusterschema>
+        <name>ClusterSchema_dynamic</name>
+        <base_port>40000</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>Y</sockets_compressed>
+        <dynamic>Y</dynamic>
+        <slaveservers>
+        </slaveservers>
+      </clusterschema>
+      <clusterschema>
+        <name>YarnCluster</name>
+        <base_port>4000</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>N</sockets_compressed>
+        <dynamic>N</dynamic>
+        <slaveservers>
+        </slaveservers>
+      </clusterschema>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017/08/21 18:07:55.861</created_date>
+    <modified_user>XXXX</modified_user>
+    <modified_date>2019/04/16 20:13:23.534</modified_date>
+    <key_for_session_key />
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>Get data from
+O1 DB view</note>
+      <xloc>704</xloc>
+      <yloc>224</yloc>
+      <width>103</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>128</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>255</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Select fields
+</note>
+      <xloc>720</xloc>
+      <yloc>384</yloc>
+      <width>91</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Output update into
+PostgreSQL DB</note>
+      <xloc>64</xloc>
+      <yloc>704</yloc>
+      <width>137</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>0</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Add constants
+-1</note>
+      <xloc>496</xloc>
+      <yloc>224</yloc>
+      <width>105</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Get endtime and
+business day</note>
+      <xloc>288</xloc>
+      <yloc>224</yloc>
+      <width>121</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Rename fields
+</note>
+      <xloc>304</xloc>
+      <yloc>384</yloc>
+      <width>105</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Source system
+each product</note>
+      <xloc>80</xloc>
+      <yloc>544</yloc>
+      <width>104</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Outer join
+</note>
+      <xloc>736</xloc>
+      <yloc>544</yloc>
+      <width>77</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Sort rows
+</note>
+      <xloc>928</xloc>
+      <yloc>544</yloc>
+      <width>73</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Logic to get
+business ID</note>
+      <xloc>928</xloc>
+      <yloc>704</yloc>
+      <width>91</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Null for
+E1_Lottery</note>
+      <xloc>720</xloc>
+      <yloc>704</yloc>
+      <width>79</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Select fields
+before update DB</note>
+      <xloc>496</xloc>
+      <yloc>704</yloc>
+      <width>129</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Add constants
+</note>
+      <xloc>496</xloc>
+      <yloc>64</yloc>
+      <width>105</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Get endtime and
+business day</note>
+      <xloc>704</xloc>
+      <yloc>64</yloc>
+      <width>121</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Get variables from 
+transformation</note>
+      <xloc>80</xloc>
+      <yloc>64</yloc>
+      <width>137</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Get system
+date</note>
+      <xloc>304</xloc>
+      <yloc>64</yloc>
+      <width>82</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Determine
+select from</note>
+      <xloc>928</xloc>
+      <yloc>64</yloc>
+      <width>84</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Select from
+</note>
+      <xloc>928</xloc>
+      <yloc>224</yloc>
+      <width>86</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>255</backgroundcolorgreen>
+      <backgroundcolorblue>128</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>O1 Backbone</name>
+    <server>12.345.6.78</server>
+    <type>INFORMIX</type>
+    <access>Native</access>
+    <database>backbone</database>
+    <port>1924</port>
+    <username>S2db</username>
+    <password>Encrypted 2be98afc86aa7f2e499149b20fd9984d5</password>
+    <servername>pri_app</servername>
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1924</attribute>
+      </attribute>
+      <attribute>
+        <code>PRE1ERVE_RE1ERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIME1TAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>S3 Qlik Postgres</name>
+    <server>12.345.6.78</server>
+    <type>POSTGRE1QL</type>
+    <access>Native</access>
+    <database>postgres</database>
+    <port>9999</port>
+    <username>sp_postgres</username>
+    <password>Encrypted abcde</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>9999</attribute>
+      </attribute>
+      <attribute>
+        <code>PRE1ERVE_RE1ERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIME1TAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Add constants 2</from>
+      <to>Get endtime_minusone</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get endtime_minusone</from>
+      <to>Select field</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Table input vSapBwBD</from>
+      <to>Add constants 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select field</from>
+      <to>Select field 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Data Grid</from>
+      <to>Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified Java Script Value</from>
+      <to>User Defined Java Expression</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>User Defined Java Expression</from>
+      <to>Select field 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select field 3</from>
+      <to>Insert / Update ztall_BD</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select field 2</from>
+      <to>Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge Join</from>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows</from>
+      <to>Modified Java Script Value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add constants</from>
+      <to>Get backdate</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get selection from</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Table input vSapBwBD</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get System Info</from>
+      <to>Add constants</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get Variables</from>
+      <to>Get System Info</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get backdate</from>
+      <to>Get selection from</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select field 3</from>
+      <to>Modified Java Script Value 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified Java Script Value 2</from>
+      <to>Sort rows 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2</from>
+      <to>Group by</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Group by</from>
+      <to> MapR - ztall_BD</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Add constants 2</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>const_minusone</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>-1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get endtime_minusone</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>endtime_minusone</field_name>
+      <calc_type>ADD_SECONDS</calc_type>
+      <field_a>end_time</field_a>
+      <field_b>const_minusone</field_b>
+      <field_c />
+      <value_type>Timestamp</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <calculation>
+      <field_name>business_date</field_name>
+      <calc_type>COPY_FIELD</calc_type>
+      <field_a>start_time</field_a>
+      <field_b />
+      <field_c />
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask>yyyyMMdd</conversion_mask>
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select field</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>business_date</name>
+        <rename />
+      </field>
+      <field>
+        <name>start_time</name>
+        <rename />
+      </field>
+      <field>
+        <name>endtime_minusone</name>
+        <rename />
+      </field>
+      <field>
+        <name>O1_business_day_id</name>
+        <rename>O1_bus_id</rename>
+      </field>
+      <field>
+        <name>ext_business_day_id</name>
+        <rename>C1_bus_id</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>start_time</name>
+        <rename>start_timestamp</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd HH:mm:ss</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>endtime_minusone</name>
+        <rename>end_timestamp</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd HH:mm:ss</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table input vSapBwBD</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>O1 Backbone</connection>
+    <sql>SELECT * FROM vsapbwBD
+WHERE start_time >= ?;</sql>
+    <limit>0</limit>
+    <lookup>Select values</lookup>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>Y</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select field 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>business_date</name>
+        <rename />
+      </field>
+      <field>
+        <name>start_timestamp</name>
+        <rename />
+      </field>
+      <field>
+        <name>end_timestamp</name>
+        <rename />
+      </field>
+      <field>
+        <name>O1_bus_id</name>
+        <rename />
+      </field>
+      <field>
+        <name>C1_bus_id</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Data Grid</name>
+    <type>DataGrid</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>system</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>30</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <data>
+      <line>
+        <item>E1</item>
+      </line>
+      <line>
+        <item>C1</item>
+      </line>
+      <line>
+        <item>O1</item>
+      </line>
+    </data>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge Join</name>
+    <type>MergeJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>FULL OUTER</join_type>
+    <step1>Data Grid</step1>
+    <step2>Select field 2</step2>
+    <keys_1>
+    </keys_1>
+    <keys_2>
+    </keys_2>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>business_date</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>system</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+
+var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+Day1 = new Date("11 May 1986");
+
+
+// To get business_id based on system
+switch (system.toString()) {
+    case "E1":
+        business_id = Math.floor(Math.abs((business_date.getTime() - Day1.getTime())/(oneDay)));  
+        break;
+    case "C1":
+        business_id = C1_bus_id;
+        break;
+    case "O1":
+        business_id = O1_bus_id;
+        break;
+    default:
+        business_id = 0;
+        break;
+}</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>business_id</name>
+        <rename>business_id</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>User Defined Java Expression</name>
+    <type>Janino</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>start_time</field_name>
+      <formula_string>system.equals("E1")? null : start_timestamp</formula_string>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field>start_timestamp</replace_field>
+    </formula>
+    <formula>
+      <field_name>end_time</field_name>
+      <formula_string>system.equals("E1")? null : end_timestamp</formula_string>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field>end_timestamp</replace_field>
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select field 3</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>system</name>
+        <rename />
+      </field>
+      <field>
+        <name>business_date</name>
+        <rename />
+      </field>
+      <field>
+        <name>business_id</name>
+        <rename />
+      </field>
+      <field>
+        <name>start_timestamp</name>
+        <rename />
+      </field>
+      <field>
+        <name>end_timestamp</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insert / Update ztall_BD</name>
+    <type>InsertUpdate</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>S3 Qlik Postgres</connection>
+    <commit>10000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema />
+      <table>ztall_BD</table>
+      <key>
+        <name>system</name>
+        <field>system</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <key>
+        <name>business_date</name>
+        <field>business_date</field>
+        <condition>=</condition>
+        <name2 />
+      </key>
+      <value>
+        <name>system</name>
+        <rename>system</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>business_date</name>
+        <rename>business_date</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>business_id</name>
+        <rename>business_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>start_timestamp</name>
+        <rename>start_timestamp</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>end_timestamp</name>
+        <rename>end_timestamp</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>768</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add constants</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>const_backdate</name>
+        <type>Integer</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>-8</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>544</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get backdate</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>backdate</field_name>
+      <calc_type>ADD_DAYS</calc_type>
+      <field_a>today</field_a>
+      <field_b>const_backdate</field_b>
+      <field_c />
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get Variables</name>
+    <type>GetVariable</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>fr_date</name>
+        <variable>${fr_date}</variable>
+        <type>Timestamp</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get selection from</name>
+    <type>Janino</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>select_from</field_name>
+      <formula_string>fr_date == null? backdate : fr_date</formula_string>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>select_from</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Get System Info</name>
+    <type>SystemInfo</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>today</name>
+        <type>system date (fixed)</type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name> MapR - ztall_BD</name>
+    <type>ParquetOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <filename>maprfs://${S2_MAPR_HDFS_CURATED_TEMPORARY}/ztall_BD_temp</filename>
+    <overrideOutput>Y</overrideOutput>
+    <compression>NONE</compression>
+    <parquetVersion>PARQUET_1</parquetVersion>
+    <enableDictionary>N</enableDictionary>
+    <dictPageSize>1024</dictPageSize>
+    <rowGroupSize />
+    <dataPageSize />
+    <extension>parquet</extension>
+    <dateInFilename>N</dateInFilename>
+    <timeInFilename>N</timeInFilename>
+    <dateTimeFormat />
+    <fields>
+      <field>
+        <path>system</path>
+        <name>system</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default />
+      </field>
+      <field>
+        <path>business_date</path>
+        <name>business_date_new</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default />
+      </field>
+      <field>
+        <path>business_id</path>
+        <name>business_id</name>
+        <type>15</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default />
+      </field>
+      <field>
+        <path>start_timestamp</path>
+        <name>start_timestamp_new</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default />
+      </field>
+      <field>
+        <path>end_timestamp</path>
+        <name>end_timestamp_new</name>
+        <type>21</type>
+        <precision>0</precision>
+        <scale>0</scale>
+        <nullable>Y</nullable>
+        <default />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>976</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified Java Script Value 2</name>
+    <type>ScriptValueMod</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var business_date_new;
+var start_timestamp_new;
+var end_timestamp_new;
+
+if (business_date != null) {
+    monthValue = 1 + month(business_date);
+	day = business_date.getDate();
+	business_date_new = year(business_date) + "/" + ((monthValue &lt; 10)?"0":"") + monthValue + "/" + ((day &lt; 10)?"0":"") + day;
+} else {
+	business_date_new = null;
+}
+
+if (start_timestamp != null) {
+	hour = start_timestamp.getHours();
+	minute = start_timestamp.getMinutes();
+	second = start_timestamp.getSeconds();
+    monthValue = 1 + month(start_timestamp);
+	day = start_timestamp.getDate();
+	start_timestamp_new = year(start_timestamp) + "/" + ((monthValue &lt; 10)?"0":"") + monthValue + "/" + ((day &lt; 10)?"0":"") + day + " "
+						+ ((hour &lt; 10)?"0":"") + hour + ":" + ((minute &lt; 10)?"0":"") + minute + ":" + ((second &lt; 10)?"0":"") + second;
+} else {
+	start_timestamp_new = null;
+}
+
+if (end_timestamp != null) {
+	hour = end_timestamp.getHours();
+	minute = end_timestamp.getMinutes();
+	second = end_timestamp.getSeconds();
+    monthValue = 1 + month(end_timestamp);
+	day = end_timestamp.getDate();
+	end_timestamp_new = year(end_timestamp) + "/" + ((monthValue &lt; 10)?"0":"") + monthValue + "/" + ((day &lt; 10)?"0":"") + day + " "
+						+ ((hour &lt; 10)?"0":"") + hour + ":" + ((minute &lt; 10)?"0":"") + minute + ":" + ((second &lt; 10)?"0":"") + second;
+} else {
+	end_timestamp_new = null;
+}
+
+
+</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>business_date_new</name>
+        <rename>business_date_new</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>start_timestamp_new</name>
+        <rename>start_timestamp_new</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>end_timestamp_new</name>
+        <rename>end_timestamp_new</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by</name>
+    <type>GroupBy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore />
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname />
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>system</name>
+      </field>
+      <field>
+        <name>business_date</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>system</aggregate>
+        <subject>system</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>business_date</aggregate>
+        <subject>business_date</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>business_id</aggregate>
+        <subject>business_id</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>start_timestamp</aggregate>
+        <subject>start_timestamp</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>end_timestamp</aggregate>
+        <subject>end_timestamp</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>business_date_new</aggregate>
+        <subject>business_date_new</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>start_timestamp_new</aggregate>
+        <subject>start_timestamp_new</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>end_timestamp_new</aggregate>
+        <subject>end_timestamp_new</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>928</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 2</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>system</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>business_date</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>320</xloc>
+      <yloc>880</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes>
+    <group>
+      <name>explorerState</name>
+    </group>
+  </attributes>
+</transformation>
