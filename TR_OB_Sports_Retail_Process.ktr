@@ -1,0 +1,5453 @@
+<transformation>
+  <info>
+    <name>TR_OB_Sports_Retail_Process</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/public/ABCD/SAPFIN/OB/OBDAILYT</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+      <partitionschema>
+        <name>cluster</name>
+        <dynamic>N</dynamic>
+        <partitions_per_slave />
+      </partitionschema>
+      <partitionschema>
+        <name>dynamic</name>
+        <dynamic>Y</dynamic>
+        <partitions_per_slave>1</partitions_per_slave>
+      </partitionschema>
+    </partitionschemas>
+    <slaveservers>
+      <slaveserver>
+        <name>ATI-PRD-ANA03</name>
+        <hostname>ATI-PRD-ANA03</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>admin</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>ATI-STG-ANA03</name>
+        <hostname>ATI-STG-ANA03</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>pentaho</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Cloud_Server</name>
+        <hostname>34.231.146.112</hostname>
+        <port>8080</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>DI Server</name>
+        <hostname>localhost</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>joe</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>DI Server 5.0</name>
+        <hostname>localhost</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>admin</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>master</name>
+        <hostname>192.168.0.133</hostname>
+        <port>8001</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Master Kettle</name>
+        <hostname>${IP_ADDR}</hostname>
+        <port>8080</port>
+        <webAppName>pentaho</webAppName>
+        <username>dh_superadmin1</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>PDI on VM</name>
+        <hostname>192.168.111.210</hostname>
+        <port />
+        <webAppName />
+        <username>admin</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>PDI_win7</name>
+        <hostname>192.168.111.131</hostname>
+        <port />
+        <webAppName>pdi_win7</webAppName>
+        <username>admin</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Slave Carte</name>
+        <hostname>${IP_ADDR}</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Slave1</name>
+        <hostname>localhost</hostname>
+        <port>8082</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Slave2</name>
+        <hostname>localhost</hostname>
+        <port>8083</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Slave3</name>
+        <hostname>localhost</hostname>
+        <port>8084</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Slave4</name>
+        <hostname>localhost</hostname>
+        <port>8085</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>Slave5</name>
+        <hostname>localhost</hostname>
+        <port>8086</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>YarnCluster - dn1:30301</name>
+        <hostname>dn1</hostname>
+        <port>30301</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>YarnCluster - dn3:30302</name>
+        <hostname>dn3</hostname>
+        <port>30302</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>YarnCluster - sandbox.hortonworks.com:30301</name>
+        <hostname>sandbox.hortonworks.com</hostname>
+        <port>30301</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>YarnCluster - sandbox.hortonworks.com:30302</name>
+        <hostname>sandbox.hortonworks.com</hostname>
+        <port>30302</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>YarnCluster - sandbox.hortonworks.com:30303</name>
+        <hostname>sandbox.hortonworks.com</hostname>
+        <port>30303</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>ati-dev-ana01</name>
+        <hostname>ati-dev-ana01</hostname>
+        <port>9081</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>njain</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>bmcPentaho</name>
+        <hostname>12.345.6.7.81</hostname>
+        <port>8080</port>
+        <webAppName>pentaho</webAppName>
+        <username>slaveRunner</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>carte_local</name>
+        <hostname>localhost</hostname>
+        <port>8081</port>
+        <webAppName>kettle</webAppName>
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>12.345.6.7.8</name>
+        <hostname>12.345.6.7.8.cipal.be</hostname>
+        <port>10001</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>di-server</name>
+        <hostname>localhost</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di</webAppName>
+        <username>joe</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local</name>
+        <hostname>12.345.6.7.8</hostname>
+        <port>9080</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>local carte</name>
+        <hostname>localhost</hostname>
+        <port>8080</port>
+        <webAppName>spoon</webAppName>
+        <username>admin</username>
+        <password>Encrypted </password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-centos</name>
+        <hostname>12.345.6.7.8</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master1</name>
+        <hostname>localhost</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master10</name>
+        <hostname>localhost</hostname>
+        <port>8090</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master2</name>
+        <hostname>localhost</hostname>
+        <port>8082</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master3</name>
+        <hostname>localhost</hostname>
+        <port>8083</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master4</name>
+        <hostname>localhost</hostname>
+        <port>8084</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master5</name>
+        <hostname>localhost</hostname>
+        <port>8085</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master6</name>
+        <hostname>localhost</hostname>
+        <port>8086</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master7</name>
+        <hostname>localhost</hostname>
+        <port>8087</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master8</name>
+        <hostname>localhost</hostname>
+        <port>8088</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi-master9</name>
+        <hostname>localhost</hostname>
+        <port>8089</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi_server10</name>
+        <hostname>localhost</hostname>
+        <port>8090</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pdi_win10</name>
+        <hostname>localhost</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>pudx</name>
+        <hostname>localhost</hostname>
+        <port>8080</port>
+        <webAppName>pentaho</webAppName>
+        <username>admin</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>remote</name>
+        <hostname>192.168.1.16</hostname>
+        <port>9080</port>
+        <webAppName>pentaho-di/kettle</webAppName>
+        <username>admin</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>slave</name>
+        <hostname>192.168.0.133</hostname>
+        <port />
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted abc123defjkl</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>webspoon</name>
+        <hostname>localhost</hostname>
+        <port>8080</port>
+        <webAppName>spoon</webAppName>
+        <username>admin</username>
+        <password>Encrypted </password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+    </slaveservers>
+    <clusterschemas>
+      <clusterschema>
+        <name>ClusterSchema</name>
+        <base_port>40000</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>Y</sockets_compressed>
+        <dynamic>N</dynamic>
+        <slaveservers>
+        </slaveservers>
+      </clusterschema>
+      <clusterschema>
+        <name>ClusterSchema_dynamic</name>
+        <base_port>40000</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>Y</sockets_compressed>
+        <dynamic>Y</dynamic>
+        <slaveservers>
+        </slaveservers>
+      </clusterschema>
+      <clusterschema>
+        <name>YarnCluster</name>
+        <base_port>4000</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>N</sockets_compressed>
+        <dynamic>N</dynamic>
+        <slaveservers>
+        </slaveservers>
+      </clusterschema>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/04/01 16:25:47.554</created_date>
+    <modified_user>johndoe</modified_user>
+    <modified_date>2022/10/08 08:08:32.810</modified_date>
+    <key_for_session_key />
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>Add new column:
+- DATE_STR
+- PostingDate
+- DocumentDate
+
+Remove column:
+- LOCATION_FLG</note>
+      <xloc>1504</xloc>
+      <yloc>208</yloc>
+      <width>140</width>
+      <heigth>157</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Get ouletid</note>
+      <xloc>544</xloc>
+      <yloc>256</yloc>
+      <width>92</width>
+      <heigth>31</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Step ( Filter outletid_not_NULL ):
+Check if outletid is not null
+TRUE: execute step on BussinessFlow (DUMMY)
+FALSE: execute step on MAPPING.</note>
+      <xloc>64</xloc>
+      <yloc>592</yloc>
+      <width>372</width>
+      <heigth>94</heigth>
+      <fontname>Tahoma</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>SAPFIN</name>
+    <server>12.345.6.7.8</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>sapfin?currentSchema=sapfin_mapping</database>
+    <port>9999</port>
+    <username>sp_sapfin</username>
+    <password>Encrypted abc123defjkl</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>9999</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>ti-yy1_finfixedcon</from>
+      <to>rdnml-yy1_finfixedcon</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>rdnml-yy1_finfixedcon</from>
+      <to>mj-add_fixed_column</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>mj-add_fixed_column</from>
+      <to>dmmy-get_data</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>sv-add_postingDate-DocumentDate-SAPDOCTYPE</from>
+      <to>mj-add_fixed_column</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>slkp_get_GLTYPE</from>
+      <to>frmla-calculate_AmountInTransactionCurrency_TaxBaseAmountInTransCrcy</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fr-Filter_GL_Type_BS</from>
+      <to>calc-ProfitCenter_USE_ABCDDPCTR</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fr-Filter_GL_Type_BS</from>
+      <to>fr_GLTYPE_COPA</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fr_GLTYPE_COPA</from>
+      <to>slkp_get_ProfitCenter_using_PCENTER</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fr_GLTYPE_COPA</from>
+      <to>ac-Add_ProfitCenter_with_empty_value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ti-yy1_gltype</from>
+      <to>slkp_get_GLTYPE</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ti-yy1_fin_retailer</from>
+      <to>slkp_get_ProfitCenter_using_PCENTER</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>udjc-build_xml_SoapEnv</from>
+      <to>tfo-xml</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>udjc-build_xml_JournalEntryRequest</from>
+      <to>udjc-build_xml_SoapEnv</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>udjc-build_csv_JournalEntry</from>
+      <to>udjc-build_csv_content</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>udjc-build_csv_content</from>
+      <to>tfo-csv</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-add_new_values</from>
+      <to>sv-add_postingDate-DocumentDate-SAPDOCTYPE</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ti-yy1_postkey</from>
+      <to>slkp_get_DebitCreditCode</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>slkp_get_DebitCreditCode</from>
+      <to>slkp_get_GLTYPE</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>gv-get_bussinessdate_controlid_interface_code</from>
+      <to>frmla-add_new_values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>calc-ProfitCenter_USE_ABCDDPCTR</from>
+      <to>frmla-Add_DocumentText_for_BS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ac-Add_ProfitCenter_with_empty_value</from>
+      <to>frmla-Add_DocumentText_for_CC</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>dmmy-get_data</from>
+      <to>slkp_get_variance_Customer</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ti-yy1_variance_entry</from>
+      <to>slkp_get_variance_Customer</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>slkp_get_variance_Customer</from>
+      <to>slkp_get_DebitCreditCode</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>slkp_get_ProfitCenter_using_PCENTER</from>
+      <to>frmla-Add_DocumentText_for_COPA</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-Add_DocumentText_for_BS</from>
+      <to>dmmy_Merge_4_step</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-Add_DocumentText_for_COPA</from>
+      <to>dmmy_Merge_4_step</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-Add_DocumentText_for_CC</from>
+      <to>dmmy_Merge_4_step</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>sr-sort_data_before_output</from>
+      <to>udjc-build_xml_JournalEntryRequest</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>sr-sort_data_before_output</from>
+      <to>udjc-build_csv_JournalEntry</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fr-Filter_outletid_not_NULL</from>
+      <to>fr-Filter_GL_Type_BS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>fr-Filter_outletid_not_NULL</from>
+      <to>dmmy-get_data_filter</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>dmmy-get_data_filter</from>
+      <to>sr-sort_data</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>sr-sort_data</from>
+      <to>udjc-handle_data_group</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>slkp-get_ProfitCenter_using_PCENTER 2</from>
+      <to>frmla-Add_DocumentText_for_COPA 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-Add_DocumentText_for_COPA 2</from>
+      <to>dmmy_Merge_4_step</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ti-yy1_fin_retailer 2</from>
+      <to>slkp-get_ProfitCenter_using_PCENTER 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ac-create_fixed_blank_value</from>
+      <to>ftr-amount</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ftr-amount</from>
+      <to>gv-get_bussinessdate_controlid_interface_code</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-calculate_AmountInTransactionCurrency_TaxBaseAmountInTransCrcy</from>
+      <to>fr-Filter_outletid_not_NULL</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-create YY1_Draw_Day</from>
+      <to>ftr-amount 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ftr-amount 2</from>
+      <to>sr-sort_data_before_output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>ac-create_fixed_blank_value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (merge two paquet file)</from>
+      <to>Detect empty stream</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Detect empty stream</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dummy (merge two paquet file)</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>udjc-handle_data_group</from>
+      <to>slkp-get_ProfitCenter_using_PCENTER 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>dmmy_Merge_4_step</from>
+      <to>frmla-Add_DocumentText_for_BS 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>frmla-Add_DocumentText_for_BS 2</from>
+      <to>frmla-create YY1_Draw_Day</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>pqi-ob_shopm_data</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Dummy (merge two paquet file)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>pqi-ob_shopdt_data</from>
+      <to>Select values 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 2</from>
+      <to>Dummy (merge two paquet file)</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Detect empty stream</name>
+    <type>DetectEmptyStream</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (merge two paquet file)</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>ac-create_fixed_blank_value</send_true_to>
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>IDDMBUSINESSDAY</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>368</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ac-Add_ProfitCenter_with_empty_value</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>ProfitCenter</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>null</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>944</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ac-create_fixed_blank_value</name>
+    <type>Constant</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>OriginalReferenceDocumentType</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>BKPFF</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>BusinessTransactionType</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>RFBU</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>OriginalReferenceDocument</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>DocumentReferenceID</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>DocumentHeaderText</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>AccountAssignmentType</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>EO</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>YY1_Bet_Mode</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>YY1_Bet_Type</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>YY1_Draw_Number</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>YY1_Product_Hierarchy</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>Y</set_empty_string>
+      </field>
+      <field>
+        <name>TaxItemClassification</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif>MWS</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>calc-ProfitCenter_USE_ABCDDPCTR</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>ProfitCenter</field_name>
+      <calc_type>COPY_FIELD</calc_type>
+      <field_a>ABCD_DPCTR</field_a>
+      <field_b />
+      <field_c />
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dmmy-get_data</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dmmy-get_data_filter</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>dmmy_Merge_4_step</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1008</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>fr-Filter_GL_Type_BS</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>calc-ProfitCenter_USE_ABCDDPCTR</send_true_to>
+    <send_false_to>fr_GLTYPE_COPA</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <conditions>
+          <condition>
+            <negated>N</negated>
+            <operator>AND</operator>
+            <leftvalue>GLTYPE</leftvalue>
+            <function>=</function>
+            <rightvalue />
+            <value>
+              <name>constant</name>
+              <type>String</type>
+              <text>BS</text>
+              <length>-1</length>
+              <precision>-1</precision>
+              <isnull>N</isnull>
+              <mask />
+            </value>
+          </condition>
+        </conditions>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>fr-Filter_outletid_not_NULL</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>dmmy-get_data_filter</send_true_to>
+    <send_false_to>fr-Filter_GL_Type_BS</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>outletid</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue />
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>464</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>fr_GLTYPE_COPA</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>slkp_get_ProfitCenter_using_PCENTER</send_true_to>
+    <send_false_to>ac-Add_ProfitCenter_with_empty_value</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>GLTYPE</leftvalue>
+        <function>=</function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>COPA</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask />
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-Add_DocumentText_for_BS</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>DocumentItemText</field_name>
+      <formula_string>[DESCRIPTION]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>AssignmentReference</field_name>
+      <formula_string>[SAPASSIGNMENT]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-Add_DocumentText_for_BS 2</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>CUSTOMER</field_name>
+      <formula_string>RIGHT("0000000000" &amp; [CUSTOMER];10)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field>CUSTOMER</replace_field>
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1088</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-Add_DocumentText_for_CC</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>DocumentItemText</field_name>
+      <formula_string>[DESCRIPTION]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>AssignmentReference</field_name>
+      <formula_string>[SAPASSIGNMENT]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>944</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-Add_DocumentText_for_COPA</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>DocumentItemText</field_name>
+      <formula_string>IF(ISBLANK([outletid]);[DESCRIPTION];[DESCRIPTION] &amp; " - " &amp; [CUSTOMER])</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>AssignmentReference</field_name>
+      <formula_string>[SAPASSIGNMENT]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-Add_DocumentText_for_COPA 2</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>DocumentItemText</field_name>
+      <formula_string>IF([CUSTOMER] = "";[DESCRIPTION]&amp;" - "&amp;[outletid];[DESCRIPTION]&amp;" - "&amp;[CUSTOMER])</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>AssignmentReference</field_name>
+      <formula_string>[SAPASSIGNMENT]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1120</xloc>
+      <yloc>624</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-add_new_values</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>GLAccount</field_name>
+      <formula_string>[GLNUMBER]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>TaxCode</field_name>
+      <formula_string>[SAPTAXCODE]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>CostCenter</field_name>
+      <formula_string>[CCCODE]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>DATE_STR</field_name>
+      <formula_string>LEFT([BUSINESSDATE];4) &amp; MID([BUSINESSDATE];6;2) &amp; RIGHT([BUSINESSDATE];2)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>DocumentDate_1</field_name>
+      <formula_string>LEFT([BUSINESSDATE];4) &amp; "-" &amp; MID([BUSINESSDATE];6;2) &amp; "-" &amp;  RIGHT([BUSINESSDATE];2)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>PostingDate</field_name>
+      <formula_string>LEFT([BUSINESSDATE];4) &amp; "-" &amp; MID([BUSINESSDATE];6;2) &amp; "-" &amp;  RIGHT([BUSINESSDATE];2)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>DocumentDate_csv</field_name>
+      <formula_string>RIGHT([BUSINESSDATE];2) &amp; "/" &amp; MID([BUSINESSDATE];6;2) &amp; "/" &amp;  LEFT([BUSINESSDATE];4)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>PostingDate_csv</field_name>
+      <formula_string>RIGHT([BUSINESSDATE];2) &amp; "/" &amp; MID([BUSINESSDATE];6;2) &amp; "/" &amp;  LEFT([BUSINESSDATE];4)</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>AccountingDocumentType</field_name>
+      <formula_string>[SAPDOCTYPE]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>SoldMaterial</field_name>
+      <formula_string>[PRODUCT]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>Currency</field_name>
+      <formula_string>[CURRENCYCODE]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>Reference1InDocumentHeader</field_name>
+      <formula_string>[interface_code]&amp;left([businessdate];4)&amp;mid([businessdate];6;2)&amp;right([businessdate];2)&amp;[control_id]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>ReferenceDocumentItem</field_name>
+      <formula_string>1</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>Debtor</field_name>
+      <formula_string>[SAPARCODE]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>DEBTOR_DocumentItemText</field_name>
+      <formula_string>[DESCRIPTION]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>DEBTOR_AssignmentReference</field_name>
+      <formula_string>[BUSINESSDATE]</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>BUSINESSDATE_DATE</field_name>
+      <formula_string>DATE(LEFT([BUSINESSDATE];4);MID([BUSINESSDATE];6;2);RIGHT([BUSINESSDATE];2))</formula_string>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1056</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-calculate_AmountInTransactionCurrency_TaxBaseAmountInTransCrcy</name>
+    <type>Formula</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>AmountInTransactionCurrency</field_name>
+      <formula_string>if([DebitCreditCode]="H";-1*[AMOUNT] ;[AMOUNT])</formula_string>
+      <value_type>Number</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <formula>
+      <field_name>TaxBaseAmountInTransCrcy</field_name>
+      <formula_string>[SAPTAXBASEAMOUNT] </formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>frmla-create YY1_Draw_Day</name>
+    <type>Formula</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <formula>
+      <field_name>YY1_Draw_Day</field_name>
+      <formula_string>IF(WEEKDAY([BUSINESSDATE_DATE])=1;"SUNDAY";IF(WEEKDAY([BUSINESSDATE_DATE])=2;"MONDAY";IF(WEEKDAY([BUSINESSDATE_DATE])=3;"TUESDAY";IF(WEEKDAY([BUSINESSDATE_DATE])=4;"WEDNESDAY";IF(WEEKDAY([BUSINESSDATE_DATE])=5;"THURSDAY";IF(WEEKDAY([BUSINESSDATE_DATE])=6;"FRIDAY";"SATURDAY"))))))</formula_string>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <replace_field />
+    </formula>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1168</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ftr-amount</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>gv-get_bussinessdate_controlid_interface_code</send_true_to>
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>AMOUNT</leftvalue>
+        <function>&lt;></function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>Number</type>
+          <text>0.0</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask>#.#</mask>
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ftr-amount 2</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>sr-sort_data_before_output</send_true_to>
+    <send_false_to />
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>AmountInTransactionCurrency</leftvalue>
+        <function>&lt;></function>
+        <rightvalue />
+        <value>
+          <name>constant</name>
+          <type>Number</type>
+          <text>0.0</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask>#.#</mask>
+        </value>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1280</xloc>
+      <yloc>752</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>gv-get_bussinessdate_controlid_interface_code</name>
+    <type>GetVariable</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>businessdate</name>
+        <variable>${businessdate}</variable>
+        <type>String</type>
+        <format>yyyyMMdd</format>
+        <currency />
+        <decimal />
+        <group />
+        <length>8</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>control_id</name>
+        <variable>${control_id}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>interface_code</name>
+        <variable>${interface_code}</variable>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>mj-add_fixed_column</name>
+    <type>MergeJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>LEFT OUTER</join_type>
+    <step1>sv-add_postingDate-DocumentDate-SAPDOCTYPE</step1>
+    <step2>rdnml-yy1_finfixedcon</step2>
+    <keys_1>
+    </keys_1>
+    <keys_2>
+    </keys_2>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1296</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>pqi-ob_shopdt_data</name>
+    <type>ParquetInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <passing_through_fields>N</passing_through_fields>
+    <file>
+      <environment />
+      <name>${input.detailfile}</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <path>IDMMBusinessDay</path>
+        <name>IDDMBUSINESSDAY</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>BusinessDate</path>
+        <name>BUSINESSDATE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>ItemID</path>
+        <name>ITEMID</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>TransactionID</path>
+        <name>TRANSACTIONID</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>DocumentDate</path>
+        <name>DOCUMENTDATE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>LineCode</path>
+        <name>LINECODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPDocType</path>
+        <name>SAPDOCTYPE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPPostingKey</path>
+        <name>SAPPOSTINGKEY</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPControlAcctCode</path>
+        <name>SAPARCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Description</path>
+        <name>DESCRIPTION</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>GLNumber</path>
+        <name>GLNUMBER</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPTaxCode</path>
+        <name>SAPTAXCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPTaxBaseAmount</path>
+        <name>SAPTAXBASEAMOUNT</name>
+        <type>Number</type>
+        <parquet_type>Double</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>CCCode</path>
+        <name>CCCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPAssignment</path>
+        <name>SAPASSIGNMENT</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>CurrencyCode</path>
+        <name>CURRENCYCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Amount</path>
+        <name>AMOUNT</name>
+        <type>Number</type>
+        <parquet_type>Double</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Product</path>
+        <name>PRODUCT</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>DrawNumber</path>
+        <name>DRAWNUMBER</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Customer</path>
+        <name>CUSTOMER</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>32</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>pqi-ob_shopm_data</name>
+    <type>ParquetInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <passing_through_fields>N</passing_through_fields>
+    <file>
+      <environment />
+      <name>${input.file}</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <path>IDMMBusinessDay</path>
+        <name>IDDMBUSINESSDAY</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>BusinessDate</path>
+        <name>BUSINESSDATE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>ItemID</path>
+        <name>ITEMID</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>TransactionID</path>
+        <name>TRANSACTIONID</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>DocumentDate</path>
+        <name>DOCUMENTDATE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>LineCode</path>
+        <name>LINECODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPDocType</path>
+        <name>SAPDOCTYPE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPPostingKey</path>
+        <name>SAPPOSTINGKEY</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPControlAcctCode</path>
+        <name>SAPARCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Description</path>
+        <name>DESCRIPTION</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>GLNumber</path>
+        <name>GLNUMBER</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPTaxCode</path>
+        <name>SAPTAXCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPTaxBaseAmount</path>
+        <name>SAPTAXBASEAMOUNT</name>
+        <type>Number</type>
+        <parquet_type>Double</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>CCCode</path>
+        <name>CCCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>SAPAssignment</path>
+        <name>SAPASSIGNMENT</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>CurrencyCode</path>
+        <name>CURRENCYCODE</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Amount</path>
+        <name>AMOUNT</name>
+        <type>Number</type>
+        <parquet_type>Double</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Product</path>
+        <name>PRODUCT</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>DrawNumber</path>
+        <name>DRAWNUMBER</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+      <field>
+        <path>Customer</path>
+        <name>CUSTOMER</name>
+        <type>String</type>
+        <parquet_type>UTF8</parquet_type>
+        <format />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>32</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>rdnml-yy1_finfixedcon</name>
+    <type>Denormaliser</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <key_field>fieldtype</key_field>
+    <group>
+        </group>
+    <fields>
+      <field>
+        <field_name>fieldval</field_name>
+        <key_value>SYSTEM</key_value>
+        <target_name>OriginalReferenceDocumentLogicalSystem</target_name>
+        <target_type>String</target_type>
+        <target_format />
+        <target_length>-1</target_length>
+        <target_precision>-1</target_precision>
+        <target_decimal_symbol />
+        <target_grouping_symbol />
+        <target_currency_symbol />
+        <target_null_string />
+        <target_aggregation_type>-</target_aggregation_type>
+      </field>
+      <field>
+        <field_name>fieldval</field_name>
+        <key_value>INT_USER</key_value>
+        <target_name>CreatedByUser</target_name>
+        <target_type>String</target_type>
+        <target_format />
+        <target_length>-1</target_length>
+        <target_precision>-1</target_precision>
+        <target_decimal_symbol />
+        <target_grouping_symbol />
+        <target_currency_symbol />
+        <target_null_string />
+        <target_aggregation_type>-</target_aggregation_type>
+      </field>
+      <field>
+        <field_name>fieldval</field_name>
+        <key_value>ABCD_COCODE</key_value>
+        <target_name>CompanyCode</target_name>
+        <target_type>String</target_type>
+        <target_format />
+        <target_length>-1</target_length>
+        <target_precision>-1</target_precision>
+        <target_decimal_symbol />
+        <target_grouping_symbol />
+        <target_currency_symbol />
+        <target_null_string />
+        <target_aggregation_type>-</target_aggregation_type>
+      </field>
+      <field>
+        <field_name>fieldval</field_name>
+        <key_value>ABCD_DPCTR</key_value>
+        <target_name>ABCD_DPCTR</target_name>
+        <target_type>String</target_type>
+        <target_format />
+        <target_length>-1</target_length>
+        <target_precision>-1</target_precision>
+        <target_decimal_symbol />
+        <target_grouping_symbol />
+        <target_currency_symbol />
+        <target_null_string />
+        <target_aggregation_type>-</target_aggregation_type>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>slkp-get_ProfitCenter_using_PCENTER 2</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>ti-yy1_fin_retailer 2</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>N</preserve_memory>
+    <sorted_list>Y</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>CUSTOMER</name>
+        <field>outletid</field>
+      </key>
+      <value>
+        <name>pcenter</name>
+        <rename>ProfitCenter</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>624</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>slkp_get_DebitCreditCode</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>ti-yy1_postkey</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>N</preserve_memory>
+    <sorted_list>Y</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>SAPPOSTINGKEY</name>
+        <field>postkey</field>
+      </key>
+      <value>
+        <name>bschl</name>
+        <rename>DebitCreditCode</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>slkp_get_GLTYPE</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>ti-yy1_gltype</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>GLNUMBER</name>
+        <field>glacct</field>
+      </key>
+      <value>
+        <name>gltype</name>
+        <rename>GLTYPE</rename>
+        <default />
+        <type>None</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>slkp_get_ProfitCenter_using_PCENTER</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>ti-yy1_fin_retailer</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>N</preserve_memory>
+    <sorted_list>Y</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>CUSTOMER</name>
+        <field>outletid</field>
+      </key>
+      <value>
+        <name>pcenter</name>
+        <rename>ProfitCenter</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>slkp_get_variance_Customer</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>ti-yy1_variance_entry</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>GLNUMBER</name>
+        <field>glacct</field>
+      </key>
+      <value>
+        <name>outletid</name>
+        <rename>outletid</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>sr-sort_data</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>DOCUMENTDATE</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>LINECODE</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>SAPDOCTYPE</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>SAPPOSTINGKEY</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>GLNUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>PRODUCT</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>CUSTOMER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>sr-sort_data_before_output</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>TRANSACTIONID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>ITEMID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1376</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>sv-add_postingDate-DocumentDate-SAPDOCTYPE</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>DATE_STR</name>
+        <rename>DATE_STR</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyyMMdd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+      <meta>
+        <name>CUSTOMER</name>
+        <rename>CUSTOMER</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1296</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tfo-csv</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator />
+    <enclosure />
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField>outputFileName</fileNameField>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${csvFile}</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>Content</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2016</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tfo-xml</name>
+    <type>TextFileOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <separator />
+    <enclosure />
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine />
+    <fileNameInField>N</fileNameInField>
+    <fileNameField>outputFileName</fileNameField>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>${xmlFile}</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>xml</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>SoapEnv</name>
+        <type>String</type>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2016</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ti-yy1_fin_retailer</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>SAPFIN</connection>
+    <sql>select
+	t.retailerid as "outletid",
+	u.pcenter as "pcenter"
+from ( select retailerid, max(effective_date) as effective_date
+from
+	yy1_fin_retailer
+	where
+	effective_date &lt;= to_date('${businessdate}', 'YYYYMMDD')
+	group by retailerid) t left join yy1_fin_retailer u
+	on t.retailerid = u.retailerid
+	and t.effective_date = u.effective_date</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ti-yy1_fin_retailer 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>SAPFIN</connection>
+    <sql>select
+	t.retailerid as "outletid",
+	u.pcenter as "pcenter"
+from ( select retailerid, max(effective_date) as effective_date
+from
+	yy1_fin_retailer
+	where
+	effective_date &lt;= to_date('${businessdate}', 'YYYYMMDD')
+	group by retailerid) t left join yy1_fin_retailer u
+	on t.retailerid = u.retailerid
+	and t.effective_date = u.effective_date</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>624</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ti-yy1_finfixedcon</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>SAPFIN</connection>
+    <sql>select
+	t.fieldtype as "fieldtype",
+	u.fieldval as "fieldval"
+from ( select fieldtype, max(effective_date) as effective_date
+from
+	yy1_finfixedcon
+	where
+	effective_date &lt;= to_date('${businessdate}', 'YYYYMMDD')
+	group by fieldtype) t left join yy1_finfixedcon u
+	on t.fieldtype = u.fieldtype
+	and t.effective_date = u.effective_date</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ti-yy1_gltype</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>SAPFIN</connection>
+    <sql>select
+	t.glacct as "glacct",
+	u.gltype as "gltype"
+from ( select glacct, max(effective_date) as effective_date
+from
+	yy1_gltype
+	where
+	effective_date &lt;= to_date('${businessdate}', 'YYYYMMDD')
+	group by glacct) t left join yy1_gltype u
+	on t.glacct = u.glacct
+	and t.effective_date = u.effective_date</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ti-yy1_postkey</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>SAPFIN</connection>
+    <sql>
+select
+	t.postkey as "postkey",
+	u.bschl as "bschl"
+from ( select postkey, max(effective_date) as effective_date
+from
+	yy1_postkey
+	where
+	effective_date &lt;= to_date('${businessdate}', 'YYYYMMDD')
+	group by postkey) t left join yy1_postkey u
+	on t.postkey = u.postkey
+	and t.effective_date = u.effective_date</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ti-yy1_variance_entry</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>SAPFIN</connection>
+    <sql>select
+	t.glacct as "glacct",
+	u.outletid as "outletid"
+from ( select glacct, max(effective_date) as effective_date
+from
+	yy1_variance_entry
+	where
+	effective_date &lt;= to_date('${businessdate}', 'YYYYMMDD')
+	group by glacct) t left join yy1_variance_entry u
+	on t.glacct = u.glacct
+	and t.effective_date = u.effective_date</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>udjc-build_csv_JournalEntry</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+import org.pentaho.di.core.row.value.ValueMetaString;
+
+	static final String TAG_IGNORE = "_tag_ignore_";
+	static final String DEFAULT_SEPARATOR = ",";
+	static final String DEFAULT_ESCAPE_CHARACTER = "\"";
+	static final String DEFAULT_END_LINE = "\r\n";
+
+	RowMetaInterface inputRowMeta;
+	RowMetaInterface outputRowMeta;
+
+	// Step not support generic
+	Map mapColumnIdx = new HashMap();// Map&lt;String, Integer>
+	Set groupKeys = new HashSet(); // Set&lt;String> the combined key
+	Map mapTagCommon = new LinkedHashMap(); // Map&lt;String, String>: common header tag - column name
+
+	Map mapTagGLACCOUNTItem = new LinkedHashMap();
+	Map mapTagGLAMOUNTItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for Common GLAmount
+	Map mapTagGLCommonItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for Common GL, TAX and Creditor
+	Map mapTagGLCCItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for GL when GL-TYPE = CC
+	Map mapTagGLBSItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for GL when GL-TYPE = BS
+	Map mapTagGLCOPAItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for GL when GL-TYPE = COPA
+
+	Map mapTagDEBTORACCOUNTItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for CREDITOR
+	Map mapTagDEBTORCommonItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for Common DEBTOR
+	
+	Map mapTagTAXItem = new LinkedHashMap(); // Map&lt;String, String>: hedger tag - column name for CREDITOR
+	Map mapTagAssignmentReferenceItem = new LinkedHashMap();
+
+	Map mapTagReferenceDocumentItem =  new LinkedHashMap();
+	Map mapTagDEBTORAssignmentReferenceItem = new LinkedHashMap();
+	Map mapAccountAssignmentTypeItem =  new LinkedHashMap();
+	String[] groupedColumns;
+	StringBuilder sbCsv = new StringBuilder(128);
+
+	private void init() {
+		// Initialize input, error and output metadata
+		inputRowMeta = getInputRowMeta();
+		outputRowMeta = new RowMeta();
+		ValueMetaInterface newFieldMeta = new ValueMetaString("JournalEntry");
+		outputRowMeta.addValueMeta(newFieldMeta);
+
+		// define grouped column
+		groupedColumns = new String[] { //
+				"TRANSACTIONID"
+		};
+
+
+
+		// common header tags
+		mapTagCommon.put("OriginalReferenceDocumentType", "OriginalReferenceDocumentType");
+		mapTagCommon.put("OriginalReferenceDocument", "OriginalReferenceDocument");
+		mapTagCommon.put("OriginalReferenceDocumentLogicalSystem", "OriginalReferenceDocumentLogicalSystem");
+		mapTagCommon.put("BusinessTransactionType", "BusinessTransactionType");
+		mapTagCommon.put("AccountingDocumentType", "AccountingDocumentType");
+		mapTagCommon.put("DocumentReferenceID", "DocumentReferenceID");
+		mapTagCommon.put("DocumentHeaderText", "DocumentHeaderText");
+		mapTagCommon.put("Reference1InDocumentHeader", "Reference1InDocumentHeader");
+		mapTagCommon.put("CreatedByUser", "CreatedByUser");
+		mapTagCommon.put("CompanyCode", "CompanyCode");
+		mapTagCommon.put("DocumentDate", "DocumentDate_1");
+		mapTagCommon.put("PostingDate", "PostingDate");
+		mapTagCommon.put("TaxDeterminationDate", "PostingDate");
+
+
+		// mapTagDEBTORACCOUNTItem item tags
+		mapTagDEBTORACCOUNTItem.put("Debtor", "Debtor");
+
+		// mapTagGLACCOUNTItem item tags
+		mapTagGLACCOUNTItem.put("GLAccount", "GLAccount");
+
+		// mapTagGLAMOUNTItem item tags
+		mapTagGLAMOUNTItem.put("Amount_GL", ""); // special tag => AmountInTransactionCurrency, AmountInCompanyCodeCurrency,
+	    						// DebitCreditCode
+		// mapTagGLCommonItem item tags
+        mapTagGLCommonItem.put("DocumentItemText", "DocumentItemText");
+		mapTagDEBTORCommonItem.put("DocumentItemText", "DEBTOR_DocumentItemText");
+		
+
+
+
+		// mapTagTAXItem item tags
+		mapTagTAXItem.put("TaxCode", "TaxCode");
+		mapTagTAXItem.put("TaxItemClassification", "TaxItemClassification");
+		mapTagTAXItem.put("Amount_TAX", "");
+
+		// AssignmentReference item tags
+		mapTagAssignmentReferenceItem.put("AssignmentReference", "AssignmentReference");
+		mapTagDEBTORAssignmentReferenceItem.put("AssignmentReference", "DEBTOR_AssignmentReference");
+
+
+		mapAccountAssignmentTypeItem.put("AccountAssignmentType", "AccountAssignmentType");
+
+
+	    mapTagGLBSItem.put("ProfitCenter", "ProfitCenter");
+
+		// mapTagGLCCItem item tags
+	    mapTagGLCCItem.put("CostCenter", "CostCenter");
+
+
+
+		// mapTagGLCOPAItem item tags
+	    mapTagGLCOPAItem.put("YY1_Bet_Mode", "YY1_Bet_Mode");
+	    mapTagGLCOPAItem.put("YY1_Bet_Type", "YY1_Bet_Type");
+	    mapTagGLCOPAItem.put("YY1_Draw_Day", "YY1_Draw_Day");
+	    mapTagGLCOPAItem.put("YY1_Draw_Number", "YY1_Draw_Number");
+	    mapTagGLCOPAItem.put("YY1_Product_Hierarchy", "YY1_Product_Hierarchy");
+	    mapTagGLCOPAItem.put("Customer", "CUSTOMER");
+	    mapTagGLCOPAItem.put("SoldMaterial", "SoldMaterial");
+
+		mapTagReferenceDocumentItem.put("ReferenceDocumentItem", "ReferenceDocumentItem");
+	}
+
+	public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException {
+
+		// get incoming row, getRow() potentially blocks waiting for more rows, returns
+		// null if no more rows expected
+		final Object[] r = getRow();
+
+		// if no more rows are expected, indicate step is finished and processRow()
+		// should not be called again
+		if (r == null) {
+			// the last group
+			if (sbCsv.length() > 0) {
+
+				// redundant end line
+				int idx = sbCsv.lastIndexOf(DEFAULT_END_LINE);
+				if (idx >= 0) {
+					sbCsv.delete(idx, idx + DEFAULT_END_LINE.length());
+				}
+
+				Object[] outputRow = RowDataUtil.createResizedCopy(new Object[] {}, outputRowMeta.size());
+				outputRow = RowDataUtil.addValueData(outputRow, 0, sbCsv.toString());
+				putRow(outputRowMeta, outputRow);
+			}
+			// done
+			setOutputDone();
+			return false;
+		}
+
+		// the "first" flag is inherited from the base step implementation
+		// it is used to guard some processing tasks, like figuring out field indexes
+		// in the row structure that only need to be done once
+		if (first) {
+			first = false;
+
+			init();
+		}
+
+		StringBuilder sbKey = new StringBuilder();
+		for (int i = 0; i &lt; groupedColumns.length; i++) {
+			String columnName = groupedColumns[i];
+			int idx = getColumnIndex(inputRowMeta, columnName);
+			String value = inputRowMeta.getString(r, idx);
+			sbKey.append(value);
+		}
+
+		String groupKey = sbKey.toString();
+		if (groupKeys.add(groupKey)) { // new group
+			if (sbCsv.length() > 0) {
+
+				// redundant end line
+				int idx = sbCsv.lastIndexOf(DEFAULT_END_LINE);
+				if (idx >= 0) {
+					sbCsv.delete(idx, idx + DEFAULT_END_LINE.length());
+				}
+
+				// put the row to the output row stream
+				Object[] outputRow = RowDataUtil.createResizedCopy(new Object[] {}, outputRowMeta.size());
+				outputRow = RowDataUtil.addValueData(outputRow, 0, sbCsv.toString());
+				putRow(outputRowMeta, outputRow);
+
+				sbCsv = new StringBuilder(128);
+			}
+			// begin group, has common tags
+			// build common tags
+			buildCells(r, inputRowMeta, mapTagCommon, sbCsv, false);
+		} else {
+			// build common tags with empty value
+			buildEmptyCells(mapTagCommon, sbCsv);
+		}
+
+
+
+		
+		//GET SAPAPCODE and SAPTAXCODE to execute switch case
+		String SelectedSAPAPCODE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("SAPARCODE"));
+		String SelectedSAPTAXCODE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("SAPTAXCODE"));
+	    String SelectedGLTYPE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("GLTYPE"));
+        if("".equals(SelectedSAPTAXCODE) &amp;&amp; "".equals(SelectedSAPAPCODE)){		
+			// build tag Item for mapTagGLItem
+
+
+			// build empty cell for DEBTOR_ACCOUNT
+		    buildEmptyCells(mapTagDEBTORACCOUNTItem, sbCsv);
+
+			// build cell for GLAccount
+			buildCells(r, inputRowMeta, mapTagGLACCOUNTItem, sbCsv, false);
+
+			// build cell for GLAccount Amount
+			buildCells(r, inputRowMeta, mapTagGLAMOUNTItem, sbCsv, false);
+
+			// build cells for GLAccount Common
+			buildCells(r, inputRowMeta, mapTagGLCommonItem, sbCsv, false);
+
+			// empty cell for Tax data
+			buildEmptyCellsByNo(4, sbCsv);
+
+			buildCells(r, inputRowMeta, mapTagAssignmentReferenceItem, sbCsv, false);
+
+			if("CC".equals(SelectedGLTYPE)){
+
+			  buildEmptyCells(mapAccountAssignmentTypeItem, sbCsv);
+			  buildEmptyCells(mapTagGLBSItem, sbCsv);
+			  buildCells(r, inputRowMeta, mapTagGLCCItem, sbCsv, true);
+
+			} else if("BS".equals(SelectedGLTYPE) || SelectedGLTYPE == null || SelectedGLTYPE.equals("")){
+
+			  // build GL-CC tags with empty value
+		      // buildEmptyCells(mapTagGLCCItem, sbCsv);
+			  buildEmptyCells(mapAccountAssignmentTypeItem, sbCsv);
+			  buildCells(r, inputRowMeta, mapTagGLBSItem, sbCsv, true);
+
+			} else	if("COPA".equals(SelectedGLTYPE)){
+			  // build GL-CC tags with empty value
+			  buildCells(r, inputRowMeta, mapAccountAssignmentTypeItem, sbCsv, false);
+			  buildCells(r, inputRowMeta, mapTagGLBSItem, sbCsv, false);
+		      buildEmptyCells(mapTagGLCCItem, sbCsv);
+			  buildCells(r, inputRowMeta, mapTagGLCOPAItem, sbCsv, true);
+			} else {
+			  sbCsv.append(DEFAULT_END_LINE);
+			}
+		} else {
+			// BUILD CELL FOR DEBTOR DATA
+			if(!"".equals(SelectedSAPAPCODE)){
+			  // build tag Item for mapTagDEBTORItem
+
+			  // build DEBTOR tags with empty value
+			  buildCells(r, inputRowMeta, mapTagDEBTORACCOUNTItem, sbCsv, false);
+
+			  // Build empty cells for GLACCOUNT
+			  buildEmptyCells(mapTagGLACCOUNTItem, sbCsv);
+              
+
+              // build GLAmount
+			  buildCells(r, inputRowMeta, mapTagGLAMOUNTItem, sbCsv, false);
+			  // build tag Item for mapTagGLCommonItem
+			  buildCells(r, inputRowMeta, mapTagDEBTORCommonItem, sbCsv, false);
+
+
+			  // empty cell for Tax data
+   			  buildEmptyCellsByNo(4, sbCsv);
+
+			  // build cell for AssignmentReferenceItem
+			  buildCells(r, inputRowMeta, mapTagAssignmentReferenceItem, sbCsv, false);
+
+			  buildEmptyCells(mapAccountAssignmentTypeItem, sbCsv);
+			  buildEmptyCells(mapTagGLBSItem, sbCsv);
+			  buildEmptyCells(mapTagGLCCItem, sbCsv);
+		      buildEmptyCells(mapTagGLCOPAItem, sbCsv);
+
+			  buildCells(r, inputRowMeta, mapTagReferenceDocumentItem, sbCsv, true);
+			 
+			} else if(!"".equals(SelectedSAPTAXCODE)){
+			  // build tag Item for mapTagTAXItem
+
+			  // empty tag mapTagDEBTORACCOUNTItem 
+			  buildEmptyCells(mapTagDEBTORACCOUNTItem, sbCsv);
+
+			  // empty tag mapTagGLACCOUNTItem 
+			  buildEmptyCells(mapTagGLACCOUNTItem, sbCsv);
+
+			  // build tag Item for mapTagGLCommonItem
+			  buildCells(r, inputRowMeta, mapTagGLAMOUNTItem, sbCsv, false);
+
+
+		      buildEmptyCells(mapTagGLCommonItem, sbCsv);
+
+			  // build tag Item for TAX
+			  buildCells(r, inputRowMeta, mapTagTAXItem, sbCsv, true);
+			  
+			}
+
+		}
+		
+		// log progress if it is time to to so
+		if (checkFeedback(getLinesRead())) {
+			logBasic("Linenr " + getLinesRead()); // Some basic logging
+		}
+
+		// indicate that processRow() should be called again
+		return true;
+	}
+
+	private void buildEmptyCellsByNo(int rowNo, StringBuilder sbCsv) {
+		for (int i = 0; i &lt; rowNo; i++) {
+			sbCsv.append(DEFAULT_SEPARATOR);
+		}
+	}
+
+	private void buildEmptyCells(Map mapTag, StringBuilder sbCsv) {
+		Object[] tags = mapTag.keySet().toArray();
+		for (int i = 0; i &lt; tags.length; i++) {
+			sbCsv.append(DEFAULT_SEPARATOR);
+		}
+	}
+
+	private void buildCells(Object[] r, RowMetaInterface inputRowMeta, Map mapTag, StringBuilder sbCsv,
+			boolean autoEndRow) throws KettleValueException {
+		Object[] tags = mapTag.keySet().toArray();
+		for (int i = 0; i &lt; tags.length; i++) {
+			String tag = (String) tags[i];
+			String columnName = (String) mapTag.get(tag);
+
+			boolean handled = TAG_IGNORE.equals(columnName);
+			if (!handled) {
+				handled = handleSpecialTag(tag, r, inputRowMeta, sbCsv);
+			}
+			if (!handled) {
+				int idx = getColumnIndex(inputRowMeta, columnName);
+				String value = inputRowMeta.getString(r, idx);
+				if (value != null) {
+					if (stringContainsSpecialCharacters(value)) {
+						sbCsv.append(DEFAULT_ESCAPE_CHARACTER).append(value).append(DEFAULT_ESCAPE_CHARACTER);
+					} else {
+					 if(columnName == "GLAccount") {
+					  	value = lpad(value, "0", 10);
+		             }
+					  sbCsv.append(value);
+					}
+				}
+			}
+			if (i &lt; tags.length - 1) {
+				sbCsv.append(DEFAULT_SEPARATOR);
+			}
+		}
+
+		if (autoEndRow) {
+			sbCsv.append(DEFAULT_END_LINE);
+		} else {
+			sbCsv.append(DEFAULT_SEPARATOR);
+		}
+	}
+
+	private boolean handleSpecialTag(String tag, Object[] r, RowMetaInterface inputRowMeta, StringBuilder sbXml)
+			throws KettleValueException {
+		if ("Amount_GL".equals(tag)) {
+			Double shareOfDividendAmount = inputRowMeta.getNumber(r,
+					getColumnIndex(inputRowMeta, "AmountInTransactionCurrency"));
+			String exchangeCurrency = inputRowMeta.getString(r, getColumnIndex(inputRowMeta, "Currency"));
+			String debitCreditCode = inputRowMeta.getString(r, getColumnIndex(inputRowMeta, "debitCreditCode"));
+			// Double amount = Math.abs(shareOfDividendAmount);
+			String amount_formatted = formatAmount(shareOfDividendAmount);
+			// AmountInTransactionCurrency
+			sbXml.append(amount_formatted).append(DEFAULT_SEPARATOR).append(exchangeCurrency).append(DEFAULT_SEPARATOR);
+			sbXml.append(debitCreditCode);// no need a separator
+			return true;
+		} else if ("Amount_TAX".equals(tag)) {
+			Double shareOfDividendAmountTAX = inputRowMeta.getNumber(r,
+					getColumnIndex(inputRowMeta, "TaxBaseAmountInTransCrcy"));
+			String exchangeCurrency = inputRowMeta.getString(r, getColumnIndex(inputRowMeta, "Currency"));
+			// Double amount = Math.abs(shareOfDividendAmountTAX);
+			String amount_formatted = formatAmount(shareOfDividendAmountTAX);
+		    // AmountInTransactionCurrency
+			sbXml.append(amount_formatted).append(DEFAULT_SEPARATOR).append(exchangeCurrency).append(DEFAULT_SEPARATOR);
+			return true;
+        }
+		return false;
+	}
+
+	private int getColumnIndex(RowMetaInterface inputRowMeta, String columnName) {
+		if (mapColumnIdx.containsKey(columnName)) {
+			return ((Integer) mapColumnIdx.get(columnName)).intValue();
+		}
+		int idx = inputRowMeta.indexOfValue(columnName);
+		if (idx &lt; 0) {
+			logError("====Not found column `" + columnName + "`");
+		}
+		mapColumnIdx.put(columnName, Integer.valueOf(idx));
+		return idx;
+	}
+
+	private static boolean stringContainsSpecialCharacters(String value) {
+		if (value == null) {
+			return false;
+		}
+		return value.contains(DEFAULT_SEPARATOR) || value.contains(DEFAULT_ESCAPE_CHARACTER)
+				|| value.contains(DEFAULT_END_LINE);
+	}
+
+	private String lpad(String currentString, String padString, int padLength) {
+    	String str = currentString;
+		if(str == null)
+    	{
+			return str;
+		}
+		while (str.length() &lt; padLength) {
+        	str = padString + str;
+		}
+	    return str;
+	}
+
+	private String formatAmount(Double amount) {
+		return formatAmount(amount, "%.2f");
+	}
+
+	private String formatAmount(Double amount, String format) {
+		if (null == amount) {
+			return "null";
+		}
+		return String.format(format, new Object[] {amount});
+	}</class_source>
+      </definition>
+    </definitions>
+    <fields>
+      <field>
+        <field_name>JournalEntryRequest</field_name>
+        <field_type>String</field_type>
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+      </field>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps />
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1600</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>udjc-build_csv_content</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>import java.util.HashMap;
+import java.util.Map;
+
+import org.pentaho.di.core.row.value.ValueMetaString;
+
+	static final String DEFAULT_SEPARATOR = ",";
+	static final String DEFAULT_END_LINE = "\r\n";
+
+	RowMetaInterface inputRowMeta;
+	RowMetaInterface outputRowMeta;
+
+	// Step not support generic
+	Map mapColumnIdx = new HashMap();// Map&lt;String, Integer>
+
+	StringBuilder sbCsv = new StringBuilder(128);
+
+	private void init() {
+		// Initialize input, error and output metadata
+		inputRowMeta = getInputRowMeta();
+		outputRowMeta = new RowMeta();
+		ValueMetaInterface newFieldMeta = new ValueMetaString("Content");
+		outputRowMeta.addValueMeta(newFieldMeta);
+
+		logBasic("====Begin csv content");
+		String[] tags = new String[] { "OriginalReferenceDocumentType", //
+				"OriginalReferenceDocument", //
+				"OriginalReferenceDocumentLogicalSystem", //
+				"BusinessTransactionType", //
+				"AccountingDocumentType", //
+				"DocumentReferenceID", //
+				"DocumentHeaderText", //
+				"Reference1InDocumentHeader", //
+				"CreatedByUser", //
+				"CompanyCode", //
+				"DocumentDate", //
+				"PostingDate", //
+				"TaxDeterminationDate", //
+				"Debtor",//
+				"GLAccount", //
+				"AmountInTransaction", //
+				"Currency",
+				"DebitCreditCode", //
+				"DocumentItemText", //
+				"TaxCode",
+				"TaxItemClassification",
+				"TaxBaseAmoun",
+				"TransCrcy",//
+				"AssignmentReference",
+				"AccountAssignmentType",
+				"ProfitCenter",
+				"CostCenter",
+				"YY1_Bet_Mode",
+				"YY1_Bet_Type",
+				"YY1_Draw_Day",
+				"YY1_Draw_Number",
+				"YY1_Product_Hierarchy",
+				"Customer",
+				"SoldMaterial",
+				"ReferenceDocumentItem"};
+
+		for (int i = 0; i &lt; tags.length; i++) {
+			sbCsv.append(tags[i]);
+			if (i &lt; tags.length - 1) {
+				sbCsv.append(DEFAULT_SEPARATOR);
+			}
+		}
+	}
+
+	public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException {
+
+		// get incoming row, getRow() potentially blocks waiting for more rows, returns
+		// null if no more rows expected
+		final Object[] r = getRow();
+
+		// if no more rows are expected, indicate step is finished and processRow()
+		// should not be called again
+		if (r == null) {
+			if (sbCsv.length() > 0) {
+
+				Object[] outputRow = RowDataUtil.createResizedCopy(new Object[] {}, outputRowMeta.size());
+				outputRow = RowDataUtil.addValueData(outputRow, 0, sbCsv.toString());
+				putRow(outputRowMeta, outputRow);
+			}
+			// done
+			setOutputDone();
+			return false;
+		}
+
+		// the "first" flag is inherited from the base step implementation
+		// it is used to guard some processing tasks, like figuring out field indexes
+		// in the row structure that only need to be done once
+		if (first) {
+			first = false;
+
+			init();
+		}
+
+		int idx = getColumnIndex(inputRowMeta, "JournalEntry");
+		String value = inputRowMeta.getString(r, idx);
+		sbCsv.append(DEFAULT_END_LINE).append(value).append(DEFAULT_END_LINE);
+
+		// log progress if it is time to to so
+		if (checkFeedback(getLinesRead())) {
+			logBasic("Linenr " + getLinesRead()); // Some basic logging
+		}
+
+		// indicate that processRow() should be called again
+		return true;
+	}
+
+	private int getColumnIndex(RowMetaInterface inputRowMeta, String columnName) {
+		if (mapColumnIdx.containsKey(columnName)) {
+			return ((Integer) mapColumnIdx.get(columnName)).intValue();
+		}
+		int idx = inputRowMeta.indexOfValue(columnName);
+		if (idx &lt; 0) {
+			logError("====Not found column `" + columnName + "`");
+		}
+		mapColumnIdx.put(columnName, Integer.valueOf(idx));
+		return idx;
+	}
+</class_source>
+      </definition>
+    </definitions>
+    <fields>
+      <field>
+        <field_name>Content</field_name>
+        <field_type>String</field_type>
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+      </field>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps />
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1824</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>udjc-build_xml_JournalEntryRequest</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.LinkedList;
+import java.util.List;
+import org.apache.commons.lang.StringEscapeUtils;
+
+import org.pentaho.di.core.row.value.ValueMetaString;
+
+	static final String TAG_OPEN = "_tag_open_";
+	static final String TAG_CLOSE = "_tag_close_";
+
+	RowMetaInterface inputRowMeta;
+	RowMetaInterface outputRowMeta;
+
+	// Step not support generic
+	Map mapColumnIdx = new HashMap();// Map&lt;String, Integer>
+	Set groupKeys = new HashSet(); // Set&lt;String> the combined key
+	Map mapTagHeader = new LinkedHashMap(); // Map&lt;String, String>: xml tag - column name
+	
+    Map mapTagGLItem = new LinkedHashMap(); // Map&lt;String, String>: xml tag - column name for P&amp;L account
+	Map mapTagDEBTORItem = new LinkedHashMap(); // Map&lt;String, String>: xml tag - column name for DEBTOR ITEM
+    Map mapTagTAXItem = new LinkedHashMap(); // Map&lt;String, String>: xml tag - column name for P&amp;L account
+
+	String[] groupedColumns;
+	Map mapXmlItem = new LinkedHashMap();
+
+	private void initMapXmlItem() {
+    	mapXmlItem.clear();
+    	mapXmlItem.put("OriginalReferenceDocumentType", new LinkedList());
+    	mapXmlItem.put("Item", new LinkedList());
+    	mapXmlItem.put("DebtorItem", new LinkedList());
+    	mapXmlItem.put("CreditorItem", new LinkedList());
+    	mapXmlItem.put("ProductTaxItem", new LinkedList());
+  	}
+
+
+	private void init() {
+		// Initialize input, error and output metadata
+		inputRowMeta = getInputRowMeta();
+		outputRowMeta = new RowMeta();
+		ValueMetaInterface newFieldMeta = new ValueMetaString("JournalEntryRequest");
+		outputRowMeta.addValueMeta(newFieldMeta);
+
+		// define grouped column
+		groupedColumns = new String[] { //
+				"TRANSACTIONID",
+		};
+
+		// header tags
+		mapTagHeader.put("OriginalReferenceDocumentType", "OriginalReferenceDocumentType");
+		mapTagHeader.put("OriginalReferenceDocument", "OriginalReferenceDocument");
+		mapTagHeader.put("OriginalReferenceDocumentLogicalSystem", "OriginalReferenceDocumentLogicalSystem");
+		mapTagHeader.put("BusinessTransactionType", "BusinessTransactionType");
+		mapTagHeader.put("AccountingDocumentType", "AccountingDocumentType");
+		mapTagHeader.put("DocumentReferenceID", "DocumentReferenceID");
+		mapTagHeader.put("DocumentHeaderText", "DocumentHeaderText");
+		mapTagHeader.put("Reference1InDocumentHeader", "Reference1InDocumentHeader");
+		mapTagHeader.put("CreatedByUser", "CreatedByUser");
+		mapTagHeader.put("CompanyCode", "CompanyCode");
+		mapTagHeader.put("DocumentDate", "DocumentDate_1");
+		mapTagHeader.put("PostingDate", "PostingDate");
+		mapTagHeader.put("TaxDeterminationDate", "PostingDate");
+		
+		// GL item tags
+		mapTagGLItem.put(TAG_OPEN + "Item", "");
+		mapTagGLItem.put("GLAccount", "GLAccount");
+		mapTagGLItem.put("Amount_GL", ""); // special tag
+		mapTagGLItem.put("DocumentItemText", "DocumentItemText");
+		mapTagGLItem.put("AssignmentReference", "AssignmentReference");
+		mapTagGLItem.put(TAG_OPEN + "AccountAssignment", "");
+		mapTagGLItem.put("Amount_GL_TYPE", ""); // special tag => display data based on TYPE
+		mapTagGLItem.put(TAG_CLOSE + "AccountAssignment", "");
+		mapTagGLItem.put("Amount_GL_PROFIT", ""); // special tag => display data based on TYPE
+		mapTagGLItem.put(TAG_CLOSE + "Item", "");
+
+		// DEBTORItem tags
+		mapTagDEBTORItem.put(TAG_OPEN + "DebtorItem", "");
+		mapTagDEBTORItem.put("Debtor", "Debtor");
+		mapTagDEBTORItem.put("Amount_DEBTOR", ""); // special tag
+		mapTagDEBTORItem.put("ReferenceDocumentItem","ReferenceDocumentItem");
+		mapTagDEBTORItem.put("DocumentItemText", "DEBTOR_DocumentItemText");
+		mapTagDEBTORItem.put("AssignmentReference", "DEBTOR_AssignmentReference");
+
+		mapTagDEBTORItem.put(TAG_CLOSE + "DebtorItem", "");
+
+		// TAX item tags
+		mapTagTAXItem.put(TAG_OPEN + "ProductTaxItem", "");
+		mapTagTAXItem.put("TaxCode", "TaxCode");
+		mapTagTAXItem.put("Amount_TAX", ""); // special tag
+		mapTagTAXItem.put("TaxItemClassification", "TaxItemClassification");
+		mapTagTAXItem.put("Amount_TAX_BASE", ""); // special tag
+		mapTagTAXItem.put(TAG_CLOSE + "ProductTaxItem", "");
+
+	}
+
+	public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException {
+
+		// get incoming row, getRow() potentially blocks waiting for more rows, returns
+		// null if no more rows expected
+		final Object[] r = getRow();
+
+		// if no more rows are expected, indicate step is finished and processRow()
+		// should not be called again
+		if (r == null) {
+           // the last group
+			if (hasItem(mapXmlItem)) {
+        		outXmlItem();
+      		}
+			// done
+			setOutputDone();
+			return false;
+		}
+		// the "first" flag is inherited from the base step implementation
+		// it is used to guard some processing tasks, like figuring out field indexes
+		// in the row structure that only need to be done once
+		if (first) {
+			first = false;
+
+			init();
+		}
+
+		StringBuilder sbKey = new StringBuilder();
+		for (int i = 0; i &lt; groupedColumns.length; i++) {
+			String tag = groupedColumns[i];
+			int idx = inputRowMeta.indexOfValue(tag);
+			String value = inputRowMeta.getString(r, idx);
+			sbKey.append(value);
+		}
+		if (groupKeys.add(sbKey.toString())) { // new group
+			// begin tag JournalEntryCreateRequest
+			if (hasItem(mapXmlItem)) {
+        		outXmlItem();
+      		}
+	  		initMapXmlItem();
+
+			// build header tags
+			buildXmlItem(r, inputRowMeta, mapTagHeader);
+
+		}
+
+
+		//GET SAPAPCODE and SAPTAXCODE to execute switch case
+		String SelectedSAPAPCODE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("SAPARCODE"));
+		String SelectedSAPTAXCODE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("SAPTAXCODE"));
+		if("".equals(SelectedSAPTAXCODE) &amp;&amp; "".equals(SelectedSAPAPCODE)){		
+			// build tag Item for mapTagGLItem
+			buildXmlItem(r, inputRowMeta, mapTagGLItem);
+		} else {
+			if(!"".equals(SelectedSAPTAXCODE)){
+			  // build tag Item for mapTagTAXItem
+			  buildXmlItem(r, inputRowMeta, mapTagTAXItem);
+			}
+
+			if(!"".equals(SelectedSAPAPCODE)){
+			  // build tag Item for mapTagDEBTORItem
+			  buildXmlItem(r, inputRowMeta, mapTagDEBTORItem);
+			}
+
+		}
+
+		// log progress if it is time to to so
+		if (checkFeedback(getLinesRead())) {
+			logBasic("Linenr " + getLinesRead()); // Some basic logging
+		}
+
+		// indicate that processRow() should be called again
+		return true;
+	}
+
+	/**
+   * @throws KettleStepException 
+   * 
+   */
+  	private void outXmlItem() throws KettleStepException {
+ 	// begin tag JournalEntryCreateRequest
+    	StringBuilder sbXml = new StringBuilder(128);
+    	sbXml.append("&lt;JournalEntryCreateRequest>")//
+        	.append("&lt;MessageHeader>")//
+        	.append("&lt;CreationDateTime>&lt;/CreationDateTime>")//
+        	.append("&lt;/MessageHeader>")//
+        	.append("&lt;JournalEntry>");
+
+    	Object[] itemTypes = mapXmlItem.keySet().toArray();
+    	for (int i = 0; i &lt; itemTypes.length; i++) {
+      		String itemType = (String) itemTypes[i];
+      		LinkedList xmlItems = (LinkedList) mapXmlItem.get(itemType);
+
+      		for (int j = 0; j &lt; xmlItems.size(); j++) {
+        		sbXml.append(xmlItems.get(j));
+      		}
+    	}
+
+    	// end tag JournalEntryCreateRequest
+    	sbXml.append("&lt;/JournalEntry>")//
+        	.append("&lt;/JournalEntryCreateRequest>");
+
+    	// put the row to the output row stream
+    	Object[] outputRow = RowDataUtil.createResizedCopy(new Object[] {}, outputRowMeta.size());
+    	outputRow = RowDataUtil.addValueData(outputRow, 0, sbXml.toString());
+
+    	putRow(outputRowMeta, outputRow);
+  	}
+
+
+	private void buildXmlItem(Object[] r, RowMetaInterface inputRowMeta, Map mapTag)
+      throws KettleValueException {
+    	StringBuilder sbXml = new StringBuilder(64);
+    	buildXml(r, inputRowMeta, mapTag, sbXml);
+    	String itemType = (String) mapTag.keySet().toArray()[0];
+    	itemType = itemType.replace(TAG_OPEN, "");
+    	((List) mapXmlItem.get(itemType)).add(sbXml.toString());
+  	}
+
+	private void buildXml(Object[] r, RowMetaInterface inputRowMeta, Map mapTag, StringBuilder sbXml)
+			throws KettleValueException {
+		Object[] tags = mapTag.keySet().toArray();
+		for (int i = 0; i &lt; tags.length; i++) {
+			String tag = (String) tags[i];
+			String columnName = (String) mapTag.get(tag);
+			boolean handled = handleOpenCloseTag(tag, sbXml);
+			if (!handled) {
+				handled = handleSpecialTag(tag, r, inputRowMeta, sbXml);
+			}
+			if (handled) {
+				continue;
+			}
+			int idx = getColumnIndex(inputRowMeta, columnName);
+			String value = inputRowMeta.getString(r, idx);
+			String value_escapedXml = StringEscapeUtils.escapeXml(value);
+			if(columnName == "GLAccount") {
+			  if(value_escapedXml != null){
+			  	value_escapedXml = lpad(value_escapedXml, "0", 10);
+			  }
+            }
+			sbXml.append("&lt;").append(tag).append(">").append(value_escapedXml).append("&lt;/").append(tag).append(">");
+		}
+	}
+
+	private boolean handleSpecialTag(String tag, Object[] r, RowMetaInterface inputRowMeta, StringBuilder sbXml)
+			throws KettleValueException {
+		if ("Amount_GL".equals(tag) || "Amount_DEBTOR".equals(tag) || "Amount_TAX".equals(tag)) {
+			// logBasic("====Special tag: " + tag);
+			Double shareOfDividendAmount = inputRowMeta.getNumber(r,
+					inputRowMeta.indexOfValue("AmountInTransactionCurrency"));
+			String debitCreditCode = inputRowMeta.getString(r, getColumnIndex(inputRowMeta, "debitCreditCode"));
+			String Currency = inputRowMeta.getString(r, getColumnIndex(inputRowMeta, "Currency"));
+			String sshareOfDividendAmount= formatAmount(shareOfDividendAmount);
+
+			sbXml.append("&lt;AmountInTransactionCurrency currencyCode=\"").append(Currency).append("\">")
+					.append(sshareOfDividendAmount).append("&lt;/AmountInTransactionCurrency>");
+			sbXml.append("&lt;DebitCreditCode>").append(debitCreditCode).append("&lt;/DebitCreditCode>");
+			return true;
+		} else if ("Amount_TAX_BASE".equals(tag)) {
+			Double shareOfDividendAmountTax = inputRowMeta.getNumber(r,
+					inputRowMeta.indexOfValue("TaxBaseAmountInTransCrcy"));
+			String Currency = inputRowMeta.getString(r, getColumnIndex(inputRowMeta, "Currency"));
+
+			String sshareOfDividendAmountTax= formatAmount(shareOfDividendAmountTax);
+			sbXml.append("&lt;TaxBaseAmountInTransCrcy currencyCode=\"").append(Currency).append("\">")
+			     .append(sshareOfDividendAmountTax).append("&lt;/TaxBaseAmountInTransCrcy>");
+			return true;
+		} else if("Amount_GL_TYPE".equals(tag)) {
+			String SelectedGLTYPE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("GLTYPE"));
+			// handle when GLTYPE == CC
+			if("CC".equals(SelectedGLTYPE)){
+				String CostCenter = inputRowMeta.getString(r,inputRowMeta.indexOfValue("CostCenter"));
+				sbXml.append("&lt;CostCenter>").append(CostCenter).append("&lt;/CostCenter>");
+			}
+
+			// handle when GLTYPE == BS
+			if("BS".equals(SelectedGLTYPE) || SelectedGLTYPE == null || SelectedGLTYPE.equals("")){
+			    String ProfitCenter = inputRowMeta.getString(r,inputRowMeta.indexOfValue("ProfitCenter"));
+				sbXml.append("&lt;ProfitCenter>").append(ProfitCenter).append("&lt;/ProfitCenter>");
+			}
+
+			// handle when GLTYPE == COPA
+			if("COPA".equals(SelectedGLTYPE)){
+			    String SelectedAccountAssignmentType = inputRowMeta.getString(r,inputRowMeta.indexOfValue("AccountAssignmentType"));
+				String ProfitCenter = inputRowMeta.getString(r,inputRowMeta.indexOfValue("ProfitCenter"));
+				String YY1_Bet_Mode = inputRowMeta.getString(r,inputRowMeta.indexOfValue("YY1_Bet_Mode"));
+				String YY1_Bet_Type = inputRowMeta.getString(r,inputRowMeta.indexOfValue("YY1_Bet_Type"));
+				String YY1_Draw_Day = inputRowMeta.getString(r,inputRowMeta.indexOfValue("YY1_Draw_Day"));
+				String YY1_Draw_Number = inputRowMeta.getString(r,inputRowMeta.indexOfValue("YY1_Draw_Number"));
+				String YY1_Product_Hierarchy = inputRowMeta.getString(r,inputRowMeta.indexOfValue("YY1_Product_Hierarchy"));
+				// String SoldMaterial = inputRowMeta.getString(r,inputRowMeta.indexOfValue("SoldMaterial"));
+				// String Customer = inputRowMeta.getString(r,inputRowMeta.indexOfValue("Customer"));
+				sbXml.append("&lt;ProfitCenter>").append(ProfitCenter).append("&lt;/ProfitCenter>");
+				sbXml.append("&lt;AccountAssignmentType>").append(SelectedAccountAssignmentType).append("&lt;/AccountAssignmentType>");
+				sbXml.append("&lt;yy1:YY1_Bet_Mode>").append(YY1_Bet_Mode).append("&lt;/yy1:YY1_Bet_Mode>");
+				sbXml.append("&lt;yy1:YY1_Bet_Type>").append(YY1_Bet_Type).append("&lt;/yy1:YY1_Bet_Type>");
+				sbXml.append("&lt;yy1:YY1_Draw_Day>").append(YY1_Draw_Day).append("&lt;/yy1:YY1_Draw_Day>");
+				sbXml.append("&lt;yy1:YY1_Draw_Number>").append(YY1_Draw_Number).append("&lt;/yy1:YY1_Draw_Number>");
+				sbXml.append("&lt;yy1:YY1_Product_Hierarchy>").append(YY1_Product_Hierarchy).append("&lt;/yy1:YY1_Product_Hierarchy>");
+			}
+			
+			return true;
+        } else if ("Amount_GL_PROFIT".equals(tag)) {
+				String SelectedGLTYPE = inputRowMeta.getString(r,inputRowMeta.indexOfValue("GLTYPE"));
+				if("COPA".equals(SelectedGLTYPE)){
+				  String SoldMaterial = inputRowMeta.getString(r,inputRowMeta.indexOfValue("SoldMaterial"));
+				  String Customer = inputRowMeta.getString(r,inputRowMeta.indexOfValue("CUSTOMER"));
+				  sbXml.append("&lt;ProfitabilitySupplement>&lt;SoldMaterial>").append(SoldMaterial).append("&lt;/SoldMaterial>");
+				  sbXml.append("&lt;Customer>").append(Customer).append("&lt;/Customer>&lt;/ProfitabilitySupplement>"); 
+				}    
+		  return true;
+		} 
+		return false;
+	}
+
+	private boolean handleOpenCloseTag(String tag, StringBuilder sbXml) {
+		if (tag.startsWith(TAG_OPEN)) {
+			// logBasic("====Open tag " + tag);
+			sbXml.append("&lt;").append(tag.substring(TAG_OPEN.length())).append(">");
+			return true;
+		} else if (tag.startsWith(TAG_CLOSE)) {
+			// logBasic("====Close tag " + tag);
+			sbXml.append("&lt;/").append(tag.substring(TAG_CLOSE.length())).append(">");
+			return true;
+		}
+		return false;
+	}
+
+	private int getColumnIndex(RowMetaInterface inputRowMeta, String columnName) {
+		if (mapColumnIdx.containsKey(columnName)) {
+			return ((Integer) mapColumnIdx.get(columnName)).intValue();
+		}
+		int idx = inputRowMeta.indexOfValue(columnName);
+		if (idx &lt; 0) {
+			logError("====Not found column `" + columnName + "`");
+		}
+		mapColumnIdx.put(columnName, Integer.valueOf(idx));
+		return idx;
+	}
+
+	private String lpad(String currentString, String padString, int padLength) {
+    	String str = currentString;
+		if(str == null)
+    	{
+			return str;
+		}
+		while (str.length() &lt; padLength) {
+        	str = padString + str;
+		}
+	    return str;
+	}
+
+	private String formatAmount(Double amount) {
+		return formatAmount(amount, "%.2f");
+	}
+
+	private String formatAmount(Double amount, String format) {
+		if (null == amount) {
+			return "null";
+		}
+		return String.format(format, new Object[] {amount});
+	}
+
+	private boolean hasItem(Map mapXmlItem) {
+    	Object[] itemTypes = mapXmlItem.keySet().toArray();
+    	for (int i = 1; i &lt; itemTypes.length; i++) {
+      		String itemType = (String) itemTypes[i];
+      		List xmlItems = (List) mapXmlItem.get(itemType);
+      		if (!xmlItems.isEmpty()) {
+        		return true;
+      		}
+    	}
+    	return false;
+  	}</class_source>
+      </definition>
+    </definitions>
+    <fields>
+      <field>
+        <field_name>JournalEntryRequest</field_name>
+        <field_type>String</field_type>
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+      </field>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps />
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1600</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>udjc-build_xml_SoapEnv</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>import java.util.HashMap;
+import java.util.Map;
+
+import org.pentaho.di.core.row.value.ValueMetaString;
+
+	RowMetaInterface inputRowMeta;
+	RowMetaInterface outputRowMeta;
+
+	// Step not support generic
+	Map mapColumnIdx = new HashMap();// Map&lt;String, Integer>
+
+	StringBuilder sbXml = new StringBuilder(128);
+
+	private void init() {
+		// Initialize input, error and output metadata
+		inputRowMeta = getInputRowMeta();
+		outputRowMeta = new RowMeta();
+		ValueMetaInterface newFieldMeta = new ValueMetaString("SoapEnv");
+		outputRowMeta.addValueMeta(newFieldMeta);
+		sbXml.append("&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?>")//
+				.append("&lt;soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:sfin=\"http://sap.com/xi/SAPSCORE/SFIN\"  xmlns:yy1=\"http://SAPCustomFields.com/YY1_\">")
+				.append("&lt;soapenv:Header/>")//
+				.append("&lt;soapenv:Body>")//
+				.append("&lt;sfin:JournalEntryBulkCreateRequest>")//
+				.append("&lt;MessageHeader>")//
+				.append("&lt;CreationDateTime>&lt;/CreationDateTime>")//
+				.append("&lt;TestDataIndicator>1&lt;/TestDataIndicator>")//
+				.append("&lt;/MessageHeader>");
+	}
+
+	public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException {
+		String businessdate = getVariable("businessdate", "");
+		// get incoming row, getRow() potentially blocks waiting for more rows, returns
+		// null if no more rows expected
+		final Object[] r = getRow();
+
+		// if no more rows are expected, indicate step is finished and processRow()
+		// should not be called again
+		if (r == null) {
+           if (sbXml.length() > 0) {
+			sbXml.append("&lt;/sfin:JournalEntryBulkCreateRequest>").append("&lt;/soapenv:Body>")
+					.append("&lt;/soapenv:Envelope>");
+
+			Object[] outputRow = RowDataUtil.createResizedCopy(new Object[] {}, outputRowMeta.size());
+			outputRow = RowDataUtil.addValueData(outputRow, 0, sbXml.toString());
+			putRow(outputRowMeta, outputRow);
+           }
+			// done
+			setOutputDone();
+			return false;
+		}
+
+		// the "first" flag is inherited from the base step implementation
+		// it is used to guard some processing tasks, like figuring out field indexes
+		// in the row structure that only need to be done once
+		if (first) {
+			first = false;
+
+			init();
+		}
+
+		int idx = getColumnIndex(inputRowMeta, "JournalEntryRequest");
+		String value = inputRowMeta.getString(r, idx);
+		sbXml.append(value);
+
+		// log progress if it is time to to so
+		if (checkFeedback(getLinesRead())) {
+			logBasic("Linenr " + getLinesRead()); // Some basic logging
+		}
+
+		// indicate that processRow() should be called again
+		return true;
+	}
+
+	private int getColumnIndex(RowMetaInterface inputRowMeta, String columnName) {
+		if (mapColumnIdx.containsKey(columnName)) {
+			return ((Integer) mapColumnIdx.get(columnName)).intValue();
+		}
+		int idx = inputRowMeta.indexOfValue(columnName);
+		if (idx &lt; 0) {
+			logError("====Not found column `" + columnName + "`");
+		}
+		mapColumnIdx.put(columnName, Integer.valueOf(idx));
+		return idx;
+	}
+</class_source>
+      </definition>
+    </definitions>
+    <fields>
+      <field>
+        <field_name>SoapEnv</field_name>
+        <field_type>String</field_type>
+        <field_length>-1</field_length>
+        <field_precision>-1</field_precision>
+      </field>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps />
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1824</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>udjc-handle_data_group</name>
+    <type>UserDefinedJavaClass</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <definitions>
+      <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+        <class_name>Processor</class_name>
+        <class_source>import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.lang.Math;
+
+RowMetaInterface inputRowMeta;//Input row meta
+
+boolean isCountryGroup = true; //is sam group
+final String[] fieldNames;//List header field
+final String fieldName;//Field name
+final int indexColAmount;//Index of col amount
+final int indexColTransactionId;//Index of col transactionid
+final int indexCustomer;
+final int indexOutlet;
+final int indexDebitCredit;
+
+
+double sumOfCustomerGroup = 0;//Sum of col Amount child
+double valueOfCustomerMain = 0;//Value col Amount Main
+
+String transactionId = "";
+
+int row = 0;
+
+Map mapRowInGroup = new HashMap();//List all row in group.
+
+public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException {
+  if (first) {
+    first = false;
+	
+	//Get headers of data input
+  }
+
+  Object[] r = getRow();
+
+  if (r == null) {
+	//Handle for final group.
+    double valTemp = 0;
+
+	sumOfCustomerGroup = Math.round(sumOfCustomerGroup * 100)/100.0;
+
+	logBasic("==============&gt; valueOfCustomerMain" + valueOfCustomerMain);
+	logBasic("==============> sumOfCustomerGroup" + sumOfCustomerGroup);
+	//if value of row Main == value of row child
+	if(valueOfCustomerMain == sumOfCustomerGroup){
+	  for(int k = 0; k&lt; mapRowInGroup.size(); k++){
+		Object[] outputRow;
+		if (mapRowInGroup.containsKey(k) &amp;&amp; k != 0) {
+		  outputRow = (Object[]) mapRowInGroup.get(k);
+			//Set value for field [TRANSACTIONID]
+			outputRow[indexColTransactionId] = transactionId;
+			//Output row to next step
+			putRow(inputRowMeta, outputRow);
+		  }
+		}
+	  } 
+	//if value of row Main != value of row child
+	else{
+	  if(valueOfCustomerMain != sumOfCustomerGroup){
+		valTemp = valueOfCustomerMain - sumOfCustomerGroup;
+	  } 
+	  //else if(valueOfCustomerMain &lt; sumOfCustomerGroup){
+		//valTemp = sumOfCustomerGroup - valueOfCustomerMain;
+	  //}
+	  for(int k = 0; k &lt; mapRowInGroup.size(); k++){
+		Object[] outputRow;
+		if (mapRowInGroup.containsKey(k)) {
+		  outputRow = (Object[]) mapRowInGroup.get(k);
+		  if(k == 0){
+			outputRow[indexColAmount] = valTemp;
+			outputRow[indexCustomer] = outputRow[indexOutlet];
+			if(valTemp &lt; 0){
+				outputRow[indexDebitCredit] = "H";
+			} else {
+				outputRow[indexDebitCredit] = "S";
+			}
+		  }
+		  //Set value for field [TRANSACTIONID]
+		  outputRow[indexColTransactionId] = transactionId;
+		  //Output row to next step
+		  putRow(inputRowMeta, outputRow);
+		}			
+	  }
+	}
+    setOutputDone();
+    return false;
+  }
+  inputRowMeta = getInputRowMeta();
+  fieldNames = inputRowMeta.getFieldNames();
+  //Get in dex of field [AMOUNT]
+  indexColAmount = inputRowMeta.indexOfValue("AmountInTransactionCurrency");
+  indexCustomer = inputRowMeta.indexOfValue("CUSTOMER");
+  indexOutlet = inputRowMeta.indexOfValue("outletid");
+  indexDebitCredit = inputRowMeta.indexOfValue("DebitCreditCode");
+  //Get index of field [TRANSACTIONID]
+  indexColTransactionId = inputRowMeta.indexOfValue("TRANSACTIONID");
+  //Start get data in group
+  for (int i = 0; i &lt; fieldNames.length; i++) {
+    fieldName = fieldNames[i];
+	if(fieldName.startsWith("CUSTOMER")){
+	  String valCustomer = get(Fields.In, fieldName).getString(r);
+	  int idxItem = inputRowMeta.indexOfValue(fieldName);
+	  // Get value need check
+	  // String valueItem = inputRowMeta.getString(r, idxItem);
+	  if(valCustomer == "" || valCustomer == null || valCustomer.isEmpty()){
+
+		sumOfCustomerGroup = Math.round(sumOfCustomerGroup * 100)/100.0;
+		double valTemp = 0;
+		logBasic("==============> valueOfCustomerMain" + valueOfCustomerMain);
+		logBasic("==============> sumOfCustomerGroup" + sumOfCustomerGroup);
+		if(valueOfCustomerMain == sumOfCustomerGroup){
+		  for(int k = 0; k&lt; mapRowInGroup.size(); k++){
+		  	Object[] outputRow;
+		  	if (mapRowInGroup.containsKey(k) &amp;&amp; k != 0) {
+			  outputRow = (Object[]) mapRowInGroup.get(k);
+		      //Set value for field [TRANSACTIONID]
+			  outputRow[indexColTransactionId] = transactionId;
+			  //Output row to next step
+			  putRow(inputRowMeta, outputRow);
+		  	}
+		  }
+		} 
+		else{
+		  if(valueOfCustomerMain != sumOfCustomerGroup){
+		  	valTemp = valueOfCustomerMain - sumOfCustomerGroup;
+		  } 
+		  //else if(valueOfCustomerMain &lt; sumOfCustomerGroup){
+		  //	valTemp = sumOfCustomerGroup - valueOfCustomerMain;
+		  //}
+		  for(int k = 0; k &lt; mapRowInGroup.size(); k++){
+			Object[] outputRow;
+			if (mapRowInGroup.containsKey(k)) {
+				outputRow = (Object[]) mapRowInGroup.get(k);
+				//if row is Main row,re-set value for field [AMOUNT]
+				if(k == 0){
+				  outputRow[indexColAmount] = valTemp;
+			      outputRow[indexCustomer] = outputRow[indexOutlet];
+				  if(valTemp &lt; 0){
+					outputRow[indexDebitCredit] = "H";
+				  } else {
+					outputRow[indexDebitCredit] = "S";
+				  }
+				}
+				//Set value for field [TRANSACTIONID]
+				outputRow[indexColTransactionId] = transactionId;
+				//Output row to next step
+				putRow(inputRowMeta, outputRow);
+			}			
+		  }
+		}
+		//re-set value when handle end for group
+		sumOfCustomerGroup = 0;
+		//valueOfCustomerMain = Math.round( get(Fields.In, "AmountInTransactionCurrency").getNumber(r) * 100) / 100;
+		valueOfCustomerMain = inputRowMeta.getNumber(r,
+					inputRowMeta.indexOfValue("AmountInTransactionCurrency"));
+		transactionId = get(Fields.In, "TRANSACTIONID").getString(r);
+		isCountryGroup = false;
+		row = 0;
+		mapRowInGroup.clear();
+	  }
+	  else{
+		Double valueOfChild = inputRowMeta.getNumber(r,
+					inputRowMeta.indexOfValue("AmountInTransactionCurrency"));
+		sumOfCustomerGroup = sumOfCustomerGroup + valueOfChild;
+		
+		isCountryGroup = true;
+	  }
+	  //Add row for group
+	  mapRowInGroup.put(row, r);
+	}
+  }
+
+  // It is always safest to call createOutputRow() to ensure that your output row's Object[] is large
+  // enough to handle any new fields you are creating in this step.
+  r = createOutputRow(r, data.outputRowMeta.size());
+
+  /* TODO: Your code here. (See Sample)
+
+  // Get the value from an input field
+  String foobar = get(Fields.In, "a_fieldname").getString(r);
+
+  foobar += "bar";
+    
+  // Set a value in a new output field
+  get(Fields.Out, "output_fieldname").setValue(r, foobar);
+
+  */
+  // Send the row on to the next step.
+  row++;
+
+  return true;
+}
+</class_source>
+      </definition>
+    </definitions>
+    <fields>
+    </fields>
+    <clear_result_fields>N</clear_result_fields>
+    <info_steps />
+    <target_steps />
+    <usage_parameters />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>864</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>IDDMBUSINESSDAY</name>
+        <rename />
+      </field>
+      <field>
+        <name>BUSINESSDATE</name>
+        <rename />
+      </field>
+      <field>
+        <name>ITEMID</name>
+        <rename />
+      </field>
+      <field>
+        <name>TRANSACTIONID</name>
+        <rename />
+      </field>
+      <field>
+        <name>DOCUMENTDATE</name>
+        <rename />
+      </field>
+      <field>
+        <name>LINECODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPDOCTYPE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPPOSTINGKEY</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPARCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>DESCRIPTION</name>
+        <rename />
+      </field>
+      <field>
+        <name>GLNUMBER</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPTAXCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPTAXBASEAMOUNT</name>
+        <rename />
+      </field>
+      <field>
+        <name>CCCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPASSIGNMENT</name>
+        <rename />
+      </field>
+      <field>
+        <name>CURRENCYCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>AMOUNT</name>
+        <rename />
+      </field>
+      <field>
+        <name>PRODUCT</name>
+        <rename />
+      </field>
+      <field>
+        <name>DRAWNUMBER</name>
+        <rename />
+      </field>
+      <field>
+        <name>CUSTOMER</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>CUSTOMER</name>
+        <rename>CUSTOMER</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>IDDMBUSINESSDAY</name>
+        <rename />
+      </field>
+      <field>
+        <name>BUSINESSDATE</name>
+        <rename />
+      </field>
+      <field>
+        <name>ITEMID</name>
+        <rename />
+      </field>
+      <field>
+        <name>TRANSACTIONID</name>
+        <rename />
+      </field>
+      <field>
+        <name>DOCUMENTDATE</name>
+        <rename />
+      </field>
+      <field>
+        <name>LINECODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPDOCTYPE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPPOSTINGKEY</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPARCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>DESCRIPTION</name>
+        <rename />
+      </field>
+      <field>
+        <name>GLNUMBER</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPTAXCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPTAXBASEAMOUNT</name>
+        <rename />
+      </field>
+      <field>
+        <name>CCCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>SAPASSIGNMENT</name>
+        <rename />
+      </field>
+      <field>
+        <name>CURRENCYCODE</name>
+        <rename />
+      </field>
+      <field>
+        <name>AMOUNT</name>
+        <rename />
+      </field>
+      <field>
+        <name>PRODUCT</name>
+        <rename />
+      </field>
+      <field>
+        <name>DRAWNUMBER</name>
+        <rename />
+      </field>
+      <field>
+        <name>CUSTOMER</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>CUSTOMER</name>
+        <rename>CUSTOMER</rename>
+        <type>Integer</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask />
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes>
+    <group>
+      <name>METASTORE.NamedClusters</name>
+      <attribute>
+        <key>NamedCluster</key>
+        <value>{"namespace":"NamedClusters","id":"NamedCluster","name":"NamedCluster","description":"A NamedCluster","metaStoreName":null}</value>
+      </attribute>
+    </group>
+    <group>
+      <name>explorerState</name>
+    </group>
+    <group>
+      <name>{"_":"Embedded MetaStore Elements","namespace":"NamedClusters","type":"NamedCluster"}</name>
+      <attribute>
+        <key>MapR-Server</key>
+        <value>{"children":[{"children":[],"id":"hdfsPassword","value":"abc123defjkl"},{"children":[],"id":"oozieUrl","value":"http://12.345.6.7.8:11000/oozie"},{"children":[],"id":"mapr","value":"Y"},{"children":[],"id":"useGateway","value":"N"},{"children":[],"id":"lastModifiedDate","value":"1691760213319"},{"children":[],"id":"jobTrackerHost","value":"localhost"},{"children":[],"id":"zooKeeperHost","value":"12.345.6.7.8"},{"children":[],"id":"shimIdentifier","value":null},{"children":[],"id":"gatewayUrl","value":null},{"children":[],"id":"jobTrackerPort","value":"8032"},{"children":[],"id":"zooKeeperPort","value":"5181"},{"children":[],"id":"name","value":"MapR-Server"},{"children":[],"id":"hdfsPort","value":"5181"},{"children":[],"id":"hdfsUsername","value":"mapr"},{"children":[],"id":"gatewayPassword","value":null},{"children":[],"id":"kafkaBootstrapServers","value":null},{"children":[],"id":"storageScheme","value":"maprfs"},{"children":[],"id":"hdfsHost","value":"12.345.6.7.8"},{"children":[],"id":"gatewayUsername","value":null}],"id":"MapR-Server","value":null,"name":"MapR-Server","owner":null,"ownerPermissionsList":[]}</value>
+      </attribute>
+      <attribute>
+        <key>MapR-DevServer</key>
+        <value>{"children":[{"children":[],"id":"hdfsPassword","value":"abc123defjkl"},{"children":[],"id":"oozieUrl","value":"http://12.345.6.7.8:11000/oozie"},{"children":[],"id":"mapr","value":"Y"},{"children":[],"id":"useGateway","value":"N"},{"children":[],"id":"lastModifiedDate","value":"1665041548259"},{"children":[],"id":"jobTrackerHost","value":"localhost"},{"children":[],"id":"zooKeeperHost","value":"12.345.6.7.8"},{"children":[],"id":"shimIdentifier","value":null},{"children":[],"id":"gatewayUrl","value":null},{"children":[],"id":"jobTrackerPort","value":"8032"},{"children":[],"id":"zooKeeperPort","value":"5181"},{"children":[],"id":"name","value":"MapR-DevServer"},{"children":[],"id":"hdfsPort","value":"5181"},{"children":[],"id":"hdfsUsername","value":"mapr"},{"children":[],"id":"gatewayPassword","value":null},{"children":[],"id":"kafkaBootstrapServers","value":null},{"children":[],"id":"storageScheme","value":"maprfs"},{"children":[],"id":"hdfsHost","value":"12.345.6.7.8"},{"children":[],"id":"gatewayUsername","value":null}],"id":"MapR-DevServer","value":null,"name":"MapR-DevServer","owner":null,"ownerPermissionsList":[]}</value>
+      </attribute>
+      <attribute>
+        <key>MapR-106</key>
+        <value>{"children":[{"children":[],"id":"hdfsPassword","value":"abc123defjkl"},{"children":[],"id":"oozieUrl","value":"https://12.345.6.7.8:11443/oozie"},{"children":[],"id":"mapr","value":"Y"},{"children":[],"id":"useGateway","value":"N"},{"children":[],"id":"lastModifiedDate","value":"1664777592882"},{"children":[],"id":"jobTrackerHost","value":"localhost"},{"children":[],"id":"zooKeeperHost","value":"12.345.6.7.8"},{"children":[],"id":"shimIdentifier","value":null},{"children":[],"id":"gatewayUrl","value":null},{"children":[],"id":"jobTrackerPort","value":"8032"},{"children":[],"id":"zooKeeperPort","value":"5181"},{"children":[],"id":"name","value":"MapR-106"},{"children":[],"id":"hdfsPort","value":"5181"},{"children":[],"id":"hdfsUsername","value":"mapr"},{"children":[],"id":"gatewayPassword","value":null},{"children":[],"id":"kafkaBootstrapServers","value":null},{"children":[],"id":"storageScheme","value":"maprfs"},{"children":[],"id":"hdfsHost","value":"12.345.6.7.8"},{"children":[],"id":"gatewayUsername","value":null}],"id":"MapR-106","value":null,"name":"MapR-106","owner":null,"ownerPermissionsList":[]}</value>
+      </attribute>
+    </group>
+  </attributes>
+</transformation>
